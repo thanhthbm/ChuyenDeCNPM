@@ -1,0 +1,13 @@
+\chapter{KẾT LUẬN}
+
+Qua quá trình tìm hiểu các thuật toán đối sánh mẫu, có thể thấy rằng bài toán tìm kiếm mẫu trong văn bản tuy có phát biểu đơn giản nhưng lại có nhiều hướng tiếp cận khác nhau. Mỗi nhóm thuật toán được xây dựng dựa trên một tư tưởng riêng, từ so sánh trực tiếp, sử dụng ô-tô-mát, hàm tiền tố, phép băm, kỹ thuật bit song song, cho đến các chiến lược dịch chuyển thông minh trong họ thuật toán Boyer-Moore.
+
+Ở nhóm thuật toán tìm kiếm mẫu từ trái sang phải, các thuật toán như Brute Force, Automaton, Karp-Rabin, Shift Or, Morris-Pratt, Knuth-Morris-Pratt, Apostolico-Crochemore và Not So Naïve cho thấy cách tiếp cận tuần tự, dễ theo dõi và có cơ sở lý thuyết rõ ràng. Trong đó, một số thuật toán như Knuth-Morris-Pratt hay Apostolico-Crochemore đạt được độ phức tạp tuyến tính nhờ tận dụng thông tin từ các lần so khớp trước đó.
+
+Đối với nhóm thuật toán tìm kiếm mẫu từ phải sang trái, các thuật toán như Boyer-Moore, Turbo Boyer-Moore, Quick Search, Tuned Boyer-Moore, Zhu-Takaoka, Berry-Ravindran và Apostolico-Giancarlo thường cho hiệu năng rất tốt trong thực tế. Điểm mạnh của nhóm này là khả năng dịch chuyển mẫu với khoảng cách lớn, từ đó giảm số lần so sánh không cần thiết trên văn bản.
+
+Bên cạnh đó, các thuật toán tìm kiếm từ vị trí xác định như Colussi, Skip Search và Alpha Skip Search cho thấy rằng thứ tự kiểm tra các vị trí trong mẫu có thể được tổ chức linh hoạt nhằm giảm số phép so sánh. Các thuật toán tìm kiếm từ vị trí bất kỳ như Horspool, Smith và Raita lại nhấn mạnh vai trò của việc lựa chọn ký tự kiểm tra và cách tính độ dịch chuyển để cải thiện hiệu quả thực tế.
+
+Từ các thuật toán đã trình bày, có thể rút ra rằng không tồn tại một thuật toán tối ưu cho mọi trường hợp. Việc lựa chọn thuật toán phù hợp phụ thuộc vào nhiều yếu tố như độ dài mẫu, độ dài văn bản, kích thước bảng chữ cái, đặc điểm dữ liệu đầu vào, yêu cầu bộ nhớ và mức độ phức tạp khi cài đặt. Với các mẫu ngắn và bảng chữ cái lớn, những thuật toán như Horspool, Quick Search, Smith hoặc Raita thường hoạt động hiệu quả. Ngược lại, khi cần đảm bảo độ phức tạp tuyến tính trong trường hợp xấu nhất, các thuật toán như Knuth-Morris-Pratt, Colussi hoặc Apostolico-Giancarlo là những lựa chọn phù hợp hơn.
+
+Nhìn chung, việc nghiên cứu các thuật toán đối sánh mẫu không chỉ giúp hiểu rõ hơn về bài toán tìm kiếm chuỗi mà còn cung cấp nền tảng quan trọng cho nhiều ứng dụng thực tế như xử lý văn bản, tìm kiếm thông tin, phân tích dữ liệu sinh học, phát hiện mẫu trong dữ liệu lớn và xây dựng các công cụ biên dịch. Các thuật toán này cũng thể hiện rõ sự cân bằng giữa lý thuyết và thực tiễn: có thuật toán tối ưu về mặt độ phức tạp, có thuật toán lại nổi bật nhờ hiệu năng thực tế và sự đơn giản khi triển khai.

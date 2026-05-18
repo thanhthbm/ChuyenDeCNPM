@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.5.15)  18 MAY 2026 14:56
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.5.15)  18 MAY 2026 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -464,7 +464,8 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 (chapters/pattern_matching_classification.aux)
 (chapters/left_to_right_matching/main.aux)
 (chapters/right_to_left_matching/main.aux)
-(chapters/specific_order_matching/main.aux))
+(chapters/specific_order_matching/main.aux)
+(chapters/any_order_matching/main.aux) (chapters/conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -546,7 +547,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 46.
 \c@lstlisting=\count342
 Package hyperref Info: Link coloring OFF on input line 46.
- (main.out) (main.out)
+ (main.out)
+(main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
@@ -604,39 +606,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]) (main.toc [1
 
-] [2])
+] [2] [3])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [3]
+ [4]
 \openout2 = `chapters/introduction.aux'.
 
  (chapters/introduction.tex
 Chương 1.
-[4
+[5
 
 
-]) [5]
+]) [6]
 \openout2 = `chapters/pattern_matching_classification.aux'.
 
  (chapters/pattern_matching_classification.tex
 Chương 2.
-[6
+[7
 
 
 
 
-] [7]) [8]
+] [8]) [9]
 \openout2 = `chapters/left_to_right_matching/main.aux'.
 
  (chapters/left_to_right_matching/main.tex
 Chương 3.
-(chapters/left_to_right_matching/brute_force.tex [9
+(chapters/left_to_right_matching/brute_force.tex [10
 
 
 
 
-] [10]
+] [11]
 File: Images/Brute-Force-Algorithm.jpg Graphic file (type bmp)
 <Images/Brute-Force-Algorithm.jpg>
 )
@@ -645,58 +647,58 @@ Overfull \hbox (36.31268pt too wide) in paragraph at lines 1--1
 []\TU/lmr/bx/n/17.28 Thuật toán Tìm kiếm bằng Ô-tô-mát (Automaton) 
  []
 
-[11] [12] [13]
+[12] [13] [14]
 File: Images/2026-05-15-11-10-25.png Graphic file (type bmp)
 <Images/2026-05-15-11-10-25.png>
 File: Images/2026-05-15-11-19-34.png Graphic file (type bmp)
 <Images/2026-05-15-11-19-34.png>
 File: Images/2026-05-15-11-19-59.png Graphic file (type bmp)
 <Images/2026-05-15-11-19-59.png>
- [14]
+ [15]
 File: Images/2026-05-15-11-20-20.png Graphic file (type bmp)
 <Images/2026-05-15-11-20-20.png>
 File: Images/2026-05-15-11-20-41.png Graphic file (type bmp)
 <Images/2026-05-15-11-20-41.png>
- [15]
+ [16]
 File: Images/2026-05-15-11-21-00.png Graphic file (type bmp)
 <Images/2026-05-15-11-21-00.png>
 File: Images/2026-05-15-11-21-16.png Graphic file (type bmp)
 <Images/2026-05-15-11-21-16.png>
-) (chapters/left_to_right_matching/kmp.tex [16]
+) (chapters/left_to_right_matching/kmp.tex [17]
 File: Images/kmp-mismatch.jpg Graphic file (type bmp)
 <Images/kmp-mismatch.jpg>
 
-[17]
+[18]
 File: Images/Longest-Prefix-Suffix-lpstable.jpg Graphic file (type bmp)
 <Images/Longest-Prefix-Suffix-lpstable.jpg>
- [18]
+ [19]
 File: Images/kmp-Algorithm-in-data-structures.jpg Graphic file (type bmp)
 <Images/kmp-Algorithm-in-data-structures.jpg>
- [19] [20] [21]) (chapters/left_to_right_matching/karp_rabin.tex
-[22] [23] [24] [25]) (chapters/left_to_right_matching/shift_or.tex [26]
+ [20] [21] [22]) (chapters/left_to_right_matching/karp_rabin.tex
+[23] [24] [25] [26]) (chapters/left_to_right_matching/shift_or.tex [27]
 File: Images/shift_or_1.png Graphic file (type bmp)
 <Images/shift_or_1.png>
 
-[27]
+[28]
 Overfull \hbox (18.16855pt too wide) in paragraph at lines 138--138
 []        \TU/lmtt/m/n/12 throw runtime_error("Pattern length must not exceed w
 ord size");[] 
  []
 
-[28]
+[29]
 File: Images/shift_or_2.png Graphic file (type bmp)
 <Images/shift_or_2.png>
- [29]
+ [30]
 File: Images/shift_or_3.png Graphic file (type bmp)
 <Images/shift_or_3.png>
-) (chapters/left_to_right_matching/morris_pratt.tex [30]
+) (chapters/left_to_right_matching/morris_pratt.tex [31]
 File: Images/mp_1.png Graphic file (type bmp)
 <Images/mp_1.png>
- [31] [32]
+ [32] [33]
 File: Images/2026-05-15-10-04-29.png Graphic file (type bmp)
 <Images/2026-05-15-10-04-29.png>
 
-[33]
+[34]
 File: Images/2026-05-15-10-08-22.png Graphic file (type bmp)
 <Images/2026-05-15-10-08-22.png>
 File: Images/2026-05-15-10-08-56.png Graphic file (type bmp)
@@ -711,12 +713,12 @@ File: Images/2026-05-15-10-10-15.png Graphic file (type bmp)
 <Images/2026-05-15-10-10-15.png>
 File: Images/2026-05-15-10-10-33.png Graphic file (type bmp)
 <Images/2026-05-15-10-10-33.png>
- [34]
+ [35]
 File: Images/2026-05-15-10-10-49.png Graphic file (type bmp)
 <Images/2026-05-15-10-10-49.png>
 File: Images/2026-05-15-10-11-20.png Graphic file (type bmp)
 <Images/2026-05-15-10-11-20.png>
-) (chapters/left_to_right_matching/apostolico_crochemore.tex [35]
+) (chapters/left_to_right_matching/apostolico_crochemore.tex [36]
 File: Images/2026-05-15-10-31-03.png Graphic file (type bmp)
 <Images/2026-05-15-10-31-03.png>
 
@@ -744,14 +746,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-[36] [37]
+[37] [38]
 File: Images/2026-05-15-10-42-19.png Graphic file (type bmp)
 <Images/2026-05-15-10-42-19.png>
 File: Images/2026-05-15-10-43-59.png Graphic file (type bmp)
 <Images/2026-05-15-10-43-59.png>
 File: Images/2026-05-15-10-44-13.png Graphic file (type bmp)
 <Images/2026-05-15-10-44-13.png>
- [38]
+ [39]
 File: Images/2026-05-15-10-44-25.png Graphic file (type bmp)
 <Images/2026-05-15-10-44-25.png>
 File: Images/2026-05-15-10-44-36.png Graphic file (type bmp)
@@ -764,7 +766,7 @@ File: Images/2026-05-15-10-45-08.png Graphic file (type bmp)
 <Images/2026-05-15-10-45-08.png>
 File: Images/2026-05-15-10-45-53.png Graphic file (type bmp)
 <Images/2026-05-15-10-45-53.png>
-) (chapters/left_to_right_matching/not_so_naive.tex [39] [40]
+) (chapters/left_to_right_matching/not_so_naive.tex [40] [41]
 Overfull \hbox (24.34839pt too wide) in paragraph at lines 72--72
 []            \TU/lmtt/m/n/12 if (std::memcmp(x.c_str() + 2, y.c_str() + j + 2,
  m - 2) == 0[] 
@@ -776,7 +778,7 @@ File: Images/2026-05-15-10-57-08.png Graphic file (type bmp)
 <Images/2026-05-15-10-57-08.png>
 File: Images/2026-05-15-10-57-27.png Graphic file (type bmp)
 <Images/2026-05-15-10-57-27.png>
-[41]
+[42]
 File: Images/2026-05-15-10-57-42.png Graphic file (type bmp)
 <Images/2026-05-15-10-57-42.png>
 File: Images/2026-05-15-10-58-03.png Graphic file (type bmp)
@@ -791,7 +793,7 @@ File: Images/2026-05-15-10-58-51.png Graphic file (type bmp)
 <Images/2026-05-15-10-58-51.png>
 File: Images/2026-05-15-10-59-03.png Graphic file (type bmp)
 <Images/2026-05-15-10-59-03.png>
- [42]
+ [43]
 File: Images/2026-05-15-10-59-25.png Graphic file (type bmp)
 <Images/2026-05-15-10-59-25.png>
 File: Images/2026-05-15-10-59-37.png Graphic file (type bmp)
@@ -800,12 +802,12 @@ File: Images/2026-05-15-10-59-48.png Graphic file (type bmp)
 <Images/2026-05-15-10-59-48.png>
 File: Images/2026-05-15-10-59-57.png Graphic file (type bmp)
 <Images/2026-05-15-10-59-57.png>
-)) [43]
+)) [44]
 \openout2 = `chapters/right_to_left_matching/main.aux'.
 
  (chapters/right_to_left_matching/main.tex
 Chương 4.
-(chapters/right_to_left_matching/boyer_moore.tex [44
+(chapters/right_to_left_matching/boyer_moore.tex [45
 
 
 
@@ -813,27 +815,27 @@ Chương 4.
 ]
 File: Images/Bad-Character-Table.jpg Graphic file (type bmp)
 <Images/Bad-Character-Table.jpg>
- [45]
+ [46]
 File: Images/Boyer-Moore-Algorithm-in-data-structures.jpg Graphic file (type bm
 p)
 <Images/Boyer-Moore-Algorithm-in-data-structures.jpg>
- [46] [47]
+ [47] [48]
 Overfull \hbox (11.98843pt too wide) in paragraph at lines 160--160
 []            \TU/lmtt/m/n/12 shift += max(1, badChar[(unsigned char)bad] - (m 
 - 1 - j));[] 
  []
 
-) (chapters/right_to_left_matching/turbo_bm.tex [48]
+) (chapters/right_to_left_matching/turbo_bm.tex [49]
 File: Images/2026-05-18-09-24-24.png Graphic file (type bmp)
 <Images/2026-05-18-09-24-24.png>
- [49]
+ [50]
 File: Images/2026-05-18-09-27-15.png Graphic file (type bmp)
 <Images/2026-05-18-09-27-15.png>
- [50] [51] [52]
+ [51] [52] [53]
 File: Images/2026-05-18-09-33-04.png Graphic file (type bmp)
 <Images/2026-05-18-09-33-04.png>
 
-[53]
+[54]
 File: Images/2026-05-18-09-33-21.png Graphic file (type bmp)
 <Images/2026-05-18-09-33-21.png>
 File: Images/2026-05-18-09-38-36.png Graphic file (type bmp)
@@ -846,10 +848,10 @@ File: Images/2026-05-18-09-39-18.png Graphic file (type bmp)
 <Images/2026-05-18-09-39-18.png>
 File: Images/2026-05-18-09-39-30.png Graphic file (type bmp)
 <Images/2026-05-18-09-39-30.png>
- [54]) (chapters/right_to_left_matching/quick_search.tex [55] [56]
+ [55]) (chapters/right_to_left_matching/quick_search.tex [56] [57]
 File: Images/2026-05-18-10-01-24.png Graphic file (type bmp)
 <Images/2026-05-18-10-01-24.png>
- [57]
+ [58]
 File: Images/2026-05-18-10-02-42.png Graphic file (type bmp)
 <Images/2026-05-18-10-02-42.png>
 File: Images/2026-05-18-10-03-03.png Graphic file (type bmp)
@@ -861,33 +863,33 @@ File: Images/2026-05-18-10-03-39.png Graphic file (type bmp)
 File: Images/2026-05-18-10-03-53.png Graphic file (type bmp)
 <Images/2026-05-18-10-03-53.png>
 )
-(chapters/right_to_left_matching/tunned_boyer_moore.tex [58] [59] [60]
+(chapters/right_to_left_matching/tunned_boyer_moore.tex [59] [60] [61]
 File: Images/2026-05-18-10-15-33.png Graphic file (type bmp)
 <Images/2026-05-18-10-15-33.png>
 File: Images/2026-05-18-10-16-24.png Graphic file (type bmp)
 <Images/2026-05-18-10-16-24.png>
- [61]
+ [62]
 File: Images/2026-05-18-10-16-42.png Graphic file (type bmp)
 <Images/2026-05-18-10-16-42.png>
 File: Images/2026-05-18-10-17-00.png Graphic file (type bmp)
 <Images/2026-05-18-10-17-00.png>
 
-[62]
+[63]
 File: Images/2026-05-18-10-17-23.png Graphic file (type bmp)
 <Images/2026-05-18-10-17-23.png>
-) (chapters/right_to_left_matching/zhu_takaoka.tex [63] [64] [65] [66]
-[67]
+) (chapters/right_to_left_matching/zhu_takaoka.tex [64] [65] [66] [67]
+[68]
 File: Images/2026-05-18-10-50-01.png Graphic file (type bmp)
 <Images/2026-05-18-10-50-01.png>
- [68]
+ [69]
 File: Images/2026-05-18-10-50-57.png Graphic file (type bmp)
 <Images/2026-05-18-10-50-57.png>
 File: Images/2026-05-18-10-51-18.png Graphic file (type bmp)
 <Images/2026-05-18-10-51-18.png>
 File: Images/2026-05-18-10-51-33.png Graphic file (type bmp)
 <Images/2026-05-18-10-51-33.png>
- [69]) (chapters/right_to_left_matching/berry_ravidan.tex [70]
-[71] [72]
+ [70]) (chapters/right_to_left_matching/berry_ravidan.tex [71]
+[72] [73]
 File: Images/2026-05-18-11-07-56.png Graphic file (type bmp)
 <Images/2026-05-18-11-07-56.png>
 File: Images/2026-05-18-11-10-30.png Graphic file (type bmp)
@@ -896,7 +898,7 @@ File: Images/2026-05-18-11-10-47.png Graphic file (type bmp)
 <Images/2026-05-18-11-10-47.png>
 File: Images/2026-05-18-11-11-07.png Graphic file (type bmp)
 <Images/2026-05-18-11-11-07.png>
- [73]
+ [74]
 File: Images/2026-05-18-11-11-27.png Graphic file (type bmp)
 <Images/2026-05-18-11-11-27.png>
 File: Images/2026-05-18-11-11-47.png Graphic file (type bmp)
@@ -904,23 +906,23 @@ File: Images/2026-05-18-11-11-47.png Graphic file (type bmp)
 File: Images/2026-05-18-11-12-09.png Graphic file (type bmp)
 <Images/2026-05-18-11-12-09.png>
 ) (chapters/right_to_left_matching/apostolico_giancarlo.tex
-[74]
+[75]
 File: Images/2026-05-18-11-37-27.png Graphic file (type bmp)
 <Images/2026-05-18-11-37-27.png>
- [75]
+ [76]
 File: Images/2026-05-18-11-40-52.png Graphic file (type bmp)
 <Images/2026-05-18-11-40-52.png>
 File: Images/2026-05-18-11-44-27.png Graphic file (type bmp)
 <Images/2026-05-18-11-44-27.png>
- [76]
+ [77]
 File: Images/2026-05-18-11-46-49.png Graphic file (type bmp)
 <Images/2026-05-18-11-46-49.png>
- [77] [78] [79] [80] [81]
+ [78] [79] [80] [81] [82]
 File: Images/2026-05-18-13-33-27.png Graphic file (type bmp)
 <Images/2026-05-18-13-33-27.png>
 File: Images/2026-05-18-13-33-47.png Graphic file (type bmp)
 <Images/2026-05-18-13-33-47.png>
- [82]
+ [83]
 File: Images/2026-05-18-13-35-21.png Graphic file (type bmp)
 <Images/2026-05-18-13-35-21.png>
 File: Images/2026-05-18-13-35-37.png Graphic file (type bmp)
@@ -929,38 +931,38 @@ File: Images/2026-05-18-13-35-52.png Graphic file (type bmp)
 <Images/2026-05-18-13-35-52.png>
 File: Images/2026-05-18-13-36-11.png Graphic file (type bmp)
 <Images/2026-05-18-13-36-11.png>
- [83]
+ [84]
 File: Images/2026-05-18-13-36-32.png Graphic file (type bmp)
 <Images/2026-05-18-13-36-32.png>
-)) [84]
+)) [85]
 \openout2 = `chapters/specific_order_matching/main.aux'.
 
 
 (chapters/specific_order_matching/main.tex
 Chương 5.
-(chapters/specific_order_matching/colussi.tex [85
+(chapters/specific_order_matching/colussi.tex [86
 
 
 
 
-] [86]
+] [87]
 File: Images/2026-05-18-14-04-48.png Graphic file (type bmp)
 <Images/2026-05-18-14-04-48.png>
- [87]
+ [88]
 File: Images/2026-05-18-14-07-41.png Graphic file (type bmp)
 <Images/2026-05-18-14-07-41.png>
- [88] [89] [90]
-[91] [92]
+ [89] [90] [91]
+[92] [93]
 File: Images/2026-05-18-14-11-22.png Graphic file (type bmp)
 <Images/2026-05-18-14-11-22.png>
- [93]
+ [94]
 File: Images/2026-05-18-14-12-49.png Graphic file (type bmp)
 <Images/2026-05-18-14-12-49.png>
 File: Images/2026-05-18-14-12-56.png Graphic file (type bmp)
 <Images/2026-05-18-14-12-56.png>
 File: Images/2026-05-18-14-13-05.png Graphic file (type bmp)
 <Images/2026-05-18-14-13-05.png>
- [94]
+ [95]
 File: Images/2026-05-18-14-13-14.png Graphic file (type bmp)
 <Images/2026-05-18-14-13-14.png>
 File: Images/2026-05-18-14-13-22.png Graphic file (type bmp)
@@ -971,55 +973,141 @@ File: Images/2026-05-18-14-13-41.png Graphic file (type bmp)
 <Images/2026-05-18-14-13-41.png>
 File: Images/2026-05-18-14-13-49.png Graphic file (type bmp)
 <Images/2026-05-18-14-13-49.png>
-) (chapters/specific_order_matching/skip_search.tex [95]
-[96] [97]
+) (chapters/specific_order_matching/skip_search.tex [96]
+[97] [98]
 File: Images/2026-05-18-14-30-49.png Graphic file (type bmp)
 <Images/2026-05-18-14-30-49.png>
 File: Images/2026-05-18-14-31-51.png Graphic file (type bmp)
 <Images/2026-05-18-14-31-51.png>
- [98]
+ [99]
 File: Images/2026-05-18-14-32-09.png Graphic file (type bmp)
 <Images/2026-05-18-14-32-09.png>
 File: Images/2026-05-18-14-32-26.png Graphic file (type bmp)
 <Images/2026-05-18-14-32-26.png>
 ) (chapters/specific_order_matching/alpha_skip_search.tex
-[99] [100]
+[100] [101]
 Overfull \hbox (79.96857pt too wide) in paragraph at lines 176--176
 []\TU/lmtt/m/n/12 void AlphaSkipSearchTrie(const string &pat, const string &txt
 , int alphabetSize) {[] 
  []
 
-[101] [102] [103]
+[102] [103] [104]
 File: Images/2026-05-18-14-53-44.png Graphic file (type bmp)
 <Images/2026-05-18-14-53-44.png>
 File: Images/2026-05-18-14-53-57.png Graphic file (type bmp)
 <Images/2026-05-18-14-53-57.png>
 File: Images/2026-05-18-14-54-52.png Graphic file (type bmp)
 <Images/2026-05-18-14-54-52.png>
- [104]
+ [105]
 File: Images/2026-05-18-14-55-03.png Graphic file (type bmp)
 <Images/2026-05-18-14-55-03.png>
 File: Images/2026-05-18-14-55-16.png Graphic file (type bmp)
 <Images/2026-05-18-14-55-16.png>
-)) [105] (main.aux (chapters/introduction.aux)
+)) [106]
+\openout2 = `chapters/any_order_matching/main.aux'.
+
+ (chapters/any_order_matching/main.tex
+Chương 6.
+(chapters/any_order_matching/horspool.tex [107
+
+
+
+
+] [108]
+File: Images/2026-05-18-15-44-06.png Graphic file (type bmp)
+<Images/2026-05-18-15-44-06.png>
+ [109]
+File: Images/2026-05-18-15-45-39.png Graphic file (type bmp)
+<Images/2026-05-18-15-45-39.png>
+File: Images/2026-05-18-15-45-50.png Graphic file (type bmp)
+<Images/2026-05-18-15-45-50.png>
+File: Images/2026-05-18-15-46-00.png Graphic file (type bmp)
+<Images/2026-05-18-15-46-00.png>
+File: Images/2026-05-18-15-46-08.png Graphic file (type bmp)
+<Images/2026-05-18-15-46-08.png>
+File: Images/2026-05-18-15-46-20.png Graphic file (type bmp)
+<Images/2026-05-18-15-46-20.png>
+ [110]
+File: Images/2026-05-18-15-46-32.png Graphic file (type bmp)
+<Images/2026-05-18-15-46-32.png>
+File: Images/2026-05-18-15-46-40.png Graphic file (type bmp)
+<Images/2026-05-18-15-46-40.png>
+)
+(chapters/any_order_matching/smith.tex [111] [112] [113]
+File: Images/2026-05-18-15-53-57.png Graphic file (type bmp)
+<Images/2026-05-18-15-53-57.png>
+File: Images/2026-05-18-15-55-14.png Graphic file (type bmp)
+<Images/2026-05-18-15-55-14.png>
+File: Images/2026-05-18-15-55-30.png Graphic file (type bmp)
+<Images/2026-05-18-15-55-30.png>
+ [114]
+File: Images/2026-05-18-15-55-45.png Graphic file (type bmp)
+<Images/2026-05-18-15-55-45.png>
+File: Images/2026-05-18-15-56-01.png Graphic file (type bmp)
+<Images/2026-05-18-15-56-01.png>
+File: Images/2026-05-18-15-56-15.png Graphic file (type bmp)
+<Images/2026-05-18-15-56-15.png>
+)
+(chapters/any_order_matching/raita.tex [115] [116] [117]
+Overfull \hbox (11.9884pt too wide) in paragraph at lines 95--95
+[]            \TU/lmtt/m/n/12 memcmp(pat.c_str() + 1, txt.c_str() + j + 1, m - 
+2) == 0) {[] 
+ []
+
+File: Images/2026-05-18-15-59-23.png Graphic file (type bmp)
+<Images/2026-05-18-15-59-23.png>
+File: Images/2026-05-18-16-00-26.png Graphic file (type bmp)
+<Images/2026-05-18-16-00-26.png>
+File: Images/2026-05-18-16-00-38.png Graphic file (type bmp)
+<Images/2026-05-18-16-00-38.png>
+[118]
+File: Images/2026-05-18-16-00-49.png Graphic file (type bmp)
+<Images/2026-05-18-16-00-49.png>
+File: Images/2026-05-18-16-01-11.png Graphic file (type bmp)
+<Images/2026-05-18-16-01-11.png>
+File: Images/2026-05-18-16-01-24.png Graphic file (type bmp)
+<Images/2026-05-18-16-01-24.png>
+File: Images/2026-05-18-16-01-32.png Graphic file (type bmp)
+<Images/2026-05-18-16-01-32.png>
+ [119]
+File: Images/2026-05-18-16-02-11.png Graphic file (type bmp)
+<Images/2026-05-18-16-02-11.png>
+)) [120]
+\openout2 = `chapters/conclusion.aux'.
+
+ (chapters/conclusion.tex
+Chương 7.
+
+Overfull \hbox (2.57124pt too wide) in paragraph at lines 7--8
+\TU/lmr/m/n/12 Moore, Turbo Boyer-Moore, Quick Search, Tuned Boyer-Moore, Zhu-T
+akaoka, Berry-
+ []
+
+) [121
+
+
+
+
+] [122] (main.aux (chapters/introduction.aux)
 (chapters/pattern_matching_classification.aux)
 (chapters/left_to_right_matching/main.aux)
 (chapters/right_to_left_matching/main.aux)
-(chapters/specific_order_matching/main.aux))
+(chapters/specific_order_matching/main.aux)
+(chapters/any_order_matching/main.aux) (chapters/conclusion.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 28CF280DE49D9971756F59B33104995B;20299.
+(rerunfilecheck)             Checksum: E421766E1CCCF986293C10A9486773B9;23115.
  ) 
 Here is how much of TeX's memory you used:
- 16145 strings out of 402807
- 325513 string characters out of 5445135
- 778634 words of memory out of 5000000
- 44657 multiletter control sequences out of 15000+600000
+ 16421 strings out of 402807
+ 335341 string characters out of 5445135
+ 782518 words of memory out of 5000000
+ 44888 multiletter control sequences out of 15000+600000
  632854 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,13n,79p,788b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (106 pages).
+Output written on main.pdf (123 pages).

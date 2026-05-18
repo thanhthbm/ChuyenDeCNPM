@@ -1,1 +1,383 @@
 \section{Thuật toán Apostolico-Giancarlo}
+
+\subsection{Đặc điểm chính}
+Apostolico-Giancarlo là một biến thể của thuật toán Boyer-Moore, được đề xuất bởi Alberto Apostolico và Raffaele Giancarlo nhằm cải thiện hiệu quả tìm kiếm bằng cách tận dụng lại thông tin từ các lần so khớp trước đó. Khác với Boyer-Moore truyền thống, thuật toán không “quên” các ký tự đã khớp sau mỗi lần thử mà lưu trữ thông tin này để giảm số phép so sánh cần thực hiện trong các bước tiếp theo.
+
+Nhờ cơ chế ghi nhớ độ dài hậu tố đã khớp, Apostolico-Giancarlo đạt được độ phức tạp tuyến tính trong giai đoạn tìm kiếm và giảm số phép so sánh ký tự trong trường hợp xấu nhất.
+
+Thuật toán có các đặc điểm sau:
+
+\begin{itemize}
+    \item là một biến thể của thuật toán Boyer-Moore;
+    \item giai đoạn tiền xử lý có độ phức tạp thời gian và không gian $O(m + \sigma)$;
+    \item giai đoạn tìm kiếm có độ phức tạp thời gian $O(n)$;
+    \item thực hiện không quá $\frac{3}{2}n$ phép so sánh trong trường hợp xấu nhất
+\end{itemize}
+
+\subsection{Mô tả thuật toán}
+Thuật toán Boyer-Moore khó phân tích vì sau mỗi lần thử, nó quên toàn bộ các ký tự đã được so khớp thành công. Apostolico và Giancarlo đã thiết kế một thuật toán ghi nhớ độ dài của hậu tố dài nhất của mẫu kết thúc tại vị trí tương ứng ở phía bên phải của cửa sổ sau mỗi lần thử. Các thông tin này được lưu trong bảng $\texttt{skip}$.
+
+Giả sử rằng trong một lần thử tại vị trí nhỏ hơn $j$, thuật toán đã so khớp một hậu tố của mẫu $x$ có độ dài $k$ tại vị trí $i + j$, với $0 < i \leq m$, thì:
+
+\[
+skip[i + j] = k.
+\]
+
+Gọi $suff[i]$, với $0 \leq i < m$, là độ dài của hậu tố dài nhất của $x$ kết thúc tại vị trí $i$ trong $x$ (xem thuật toán Boyer-Moore).
+
+Trong lần thử tại vị trí $j$, nếu thuật toán so khớp thành công đoạn văn bản:
+
+\[
+y[i + j + 1 \dots j + m - 1]
+\]
+
+với hậu tố tương ứng của mẫu, thì thông tin lưu trong bảng $\texttt{skip}$ có thể được sử dụng để bỏ qua một số phép so sánh ký tự không cần thiết ở các bước tiếp theo.
+
+Khi đó sẽ xuất hiện 4 trường hợp sau:
+
+\begin{itemize}
+    \item \textbf{Trường hợp 1:} $k > suff[i]$ và $suff[i] = i + 1$.
+    
+        Điều này có nghĩa là đã tìm thấy một lần xuất hiện của mẫu $x$ tại vị trí $j$, và $skip[j + m - 1]$ được gán bằng $m$. Sau đó, thuật toán thực hiện phép dịch chuyển có độ dài bằng $per(x)$.
+
+        \begin{center}
+            \includegraphics[width=10cm]{Images/2026-05-18-11-37-27.png}
+        \end{center}
+
+    \item \textbf{Trường hợp 2:} $k > suff[i]$ và $suff[i] \leq i$.
+
+        Điều này có nghĩa là xảy ra sự không khớp giữa hai ký tự $x[i - suff[i]]$ và $y[i + j - suff[i]]$, đồng thời:
+
+        \[
+        skip[j+m - 1] = m - 1 - i + suff[i]
+        \]
+
+        \begin{center}
+            \includegraphics[width=10cm]{Images/2026-05-18-11-40-52.png}
+        \end{center}
+
+        Một phép dịch chuyển được thực hiện bằng cách sử dụng:
+
+        \[
+        bmBc[y[i + j - suff[i]]]
+        \]
+
+        và
+
+        \[
+        bmGs[i-suff[i] + 1]
+        \]
+
+    \item \textbf{Trường hợp 3:} $k < suff[i]$.
+    
+        Điều này có nghĩa là xảy ra sự không khớp giữa hai ký tự $x[i - k]$ và $y[i+j-k]$, đồng thời:
+
+        \[
+        skip[j+m-1] = m - 1 - i + k
+        \]
+
+        \begin{center}
+            \includegraphics[width=10cm]{Images/2026-05-18-11-44-27.png}
+        \end{center}
+
+        Phép dịch chuyển được tính bằng:
+
+        \[
+        bmBc[y[i+j - k]]
+        \]
+
+        vả
+
+        \[
+        bmGs[i-k+1].
+        \]
+
+    \item \textbf{Trường hợp 4:} $k = suff[i]$.
+    
+        Đây là trường hợp duy nhất mà thuật toán phải thực hiện một "bước nhảy" qua đoạn văn bản
+
+        \[
+        y[i+j - k + 1 \dots i+ j]
+        \]
+
+        để tiếp tục quá trình so sánh giữa các ký tự $y[i + j - k]$ và $x[i - k]$.
+
+        \begin{center}
+            \includegraphics[width=10cm]{Images/2026-05-18-11-46-49.png}
+        \end{center}    
+\end{itemize}
+
+Trong mọi trường hợp, thông tin duy nhất cần thiết là độ dài của hậu tố dài nhất của $x$ kết thúc tại vị trí $i$ trong $x$.
+
+Thuật toán Apostolico-Giancarlo sử dụng hai cấu trúc dữ liệu:
+
+\begin{itemize}
+    \item bảng $\texttt{skip}$, được cập nhật ở cuối mỗi lần thử tại vị trí tại $j$ như sau:
+    
+        \[
+        skip[j + m - 1]
+        =
+        \max \left\{
+        k \mid
+        x[m-k \dots m-1]
+        =
+        y[j+m-k \dots j+m-1]
+        \right\}
+        \]
+
+    \item bảng $\texttt{suff}$, được sử dụng trong quá trình tính bảng $\texttt{bmGs}$:
+    
+        \[
+        \text{với } 1 \leq i < m,
+        \quad
+        suff[i]
+        =
+        \max \left\{
+        k \mid
+        x[i-k+1 \ldots i]
+        =
+        x[m-k \ldots m-1]
+        \right\}
+        \]
+\end{itemize}
+
+Độ phức tạp thời gian và không gian của giai đoạn tiền xử lý trong thuật toán Apostolico-Giancarlo giống với Boyer-Moore, tức là $O(m+\sigma)$.
+
+Trong giai đoạn tìm kiếm, tại mỗi lần thử chỉ cần sử dụng $m$ thông tin gần nhất của bảng $\texttt{skip}$, do đó kích thước của bảng này có thể giảm xuống còn $O(m)$.
+
+Trong trường hợp xấu nhất, thuật toán Apostolico-Giancarlo thực hiện không quá $\frac{3}{2}n$ phép so sánh ký tự của văn bản.
+
+\subsection{Cài đặt bằng C++}
+
+\begin{verbatim}
+#include <iostream>
+#include <vector>
+#include <string>
+#include <cstring>
+#include <algorithm>
+
+using namespace std;
+
+const int ASIZE = 256;
+
+/* ---------- Suffixes ---------- */
+void suffixes(const string &pat,
+              vector<int> &suff) {
+    int m = pat.length();
+
+    suff.resize(m);
+    suff[m - 1] = m;
+
+    int g = m - 1;
+    int f = 0;
+
+    for (int i = m - 2; i >= 0; --i) {
+        if (i > g &&
+            suff[i + m - 1 - f] < i - g) {
+            suff[i] = suff[i + m - 1 - f];
+        } else {
+            if (i < g)
+                g = i;
+
+            f = i;
+
+            while (g >= 0 &&
+                   pat[g] ==
+                   pat[g + m - 1 - f]) {
+                --g;
+            }
+
+            suff[i] = f - g;
+        }
+    }
+}
+
+/* ---------- Good Suffix ---------- */
+void preBmGs(const string &pat,
+             vector<int> &bmGs,
+             vector<int> &suff) {
+    int m = pat.length();
+
+    suffixes(pat, suff);
+
+    bmGs.assign(m, m);
+
+    int j = 0;
+
+    for (int i = m - 1; i >= 0; --i) {
+        if (suff[i] == i + 1) {
+            for (; j < m - 1 - i; ++j) {
+                if (bmGs[j] == m)
+                    bmGs[j] = m - 1 - i;
+            }
+        }
+    }
+
+    for (int i = 0; i <= m - 2; ++i) {
+        bmGs[m - 1 - suff[i]]
+            = m - 1 - i;
+    }
+}
+
+/* ---------- Bad Character ---------- */
+void preBmBc(const string &pat,
+             vector<int> &bmBc) {
+    int m = pat.length();
+
+    bmBc.assign(ASIZE, m);
+
+    for (int i = 0; i < m - 1; ++i) {
+        bmBc[(unsigned char)pat[i]]
+            = m - 1 - i;
+    }
+}
+
+/* ---------- Apostolico-Giancarlo ---------- */
+void AG(const string &pat,
+        const string &txt) {
+
+    int m = pat.length();
+    int n = txt.length();
+
+    vector<int> bmGs;
+    vector<int> suff;
+    vector<int> bmBc;
+    vector<int> skip(m, 0);
+
+    /* Preprocessing */
+    preBmGs(pat, bmGs, suff);
+    preBmBc(pat, bmBc);
+
+    /* Searching */
+    int j = 0;
+
+    while (j <= n - m) {
+
+        int i = m - 1;
+
+        while (i >= 0) {
+
+            int k = skip[i];
+            int s = suff[i];
+
+            if (k > 0) {
+
+                if (k > s) {
+
+                    if (i + 1 == s)
+                        i = -1;
+                    else
+                        i -= s;
+
+                    break;
+                }
+                else {
+
+                    i -= k;
+
+                    if (k < s)
+                        break;
+                }
+            }
+            else {
+
+                if (pat[i] == txt[i + j])
+                    --i;
+                else
+                    break;
+            }
+        }
+
+        int shift;
+
+        if (i < 0) {
+
+            cout << "Pattern found at index: "
+                 << j << endl;
+
+            skip[m - 1] = m;
+            shift = bmGs[0];
+        }
+        else {
+
+            skip[m - 1] = m - 1 - i;
+
+            shift = max(
+                bmGs[i],
+                bmBc[(unsigned char)txt[i + j]]
+                - m + 1 + i
+            );
+        }
+
+        j += shift;
+
+        /* Update skip table */
+        for (int t = 0; t < m - shift; ++t) {
+            skip[t] = skip[t + shift];
+        }
+
+        for (int t = m - shift; t < m; ++t) {
+            skip[t] = 0;
+        }
+    }
+}
+
+/* ---------- Main ---------- */
+int main() {
+
+    string text = "ABAAABCDABCABC";
+    string pattern = "ABC";
+
+    AG(pattern, text);
+
+    return 0;
+}
+\end{verbatim}
+
+\subsection{Kiểm nghiệm thuật toán}
+
+\textbf{Pha tiền xử lý:}
+
+\begin{center}
+    \includegraphics[width=10cm]{Images/2026-05-18-13-33-27.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=10cm]{Images/2026-05-18-13-33-47.png}
+\end{center}
+
+Bảng $\texttt{bmBc}$ và $\texttt{bmGs}$ được sử dụng trong thuật toán Apostolico-Giancarlo.
+
+\textbf{Pha tìm kiếm:}
+
+Lần 1:
+
+\begin{center}
+    \includegraphics[width=15cm]{Images/2026-05-18-13-35-21.png}
+\end{center}
+
+Lần 2:
+
+\begin{center}
+    \includegraphics[width=15cm]{Images/2026-05-18-13-35-37.png}
+\end{center}
+
+Lần 3:
+
+\begin{center}
+    \includegraphics[width=15cm]{Images/2026-05-18-13-35-52.png}
+\end{center}
+
+Lần 4:
+
+\begin{center}
+    \includegraphics[width=15cm]{Images/2026-05-18-13-36-11.png}
+\end{center}
+
+Lần 5:
+
+\begin{center}
+    \includegraphics[width=15cm]{Images/2026-05-18-13-36-32.png}
+\end{center}
+
+Thuật toán Apostolico-Giancarlo thực hiện 15 lần so khớp ký tự trong ví dụ trên.

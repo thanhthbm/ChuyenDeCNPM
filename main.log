@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.5.15)  18 MAY 2026 11:14
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.5.15)  18 MAY 2026 14:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -463,7 +463,8 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 (main.aux (chapters/introduction.aux)
 (chapters/pattern_matching_classification.aux)
 (chapters/left_to_right_matching/main.aux)
-(chapters/right_to_left_matching/main.aux))
+(chapters/right_to_left_matching/main.aux)
+(chapters/specific_order_matching/main.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -902,25 +903,104 @@ File: Images/2026-05-18-11-11-47.png Graphic file (type bmp)
 <Images/2026-05-18-11-11-47.png>
 File: Images/2026-05-18-11-12-09.png Graphic file (type bmp)
 <Images/2026-05-18-11-12-09.png>
-) (chapters/right_to_left_matching/apostolico_giancarlo.tex))
-[74] (main.aux (chapters/introduction.aux)
+) (chapters/right_to_left_matching/apostolico_giancarlo.tex
+[74]
+File: Images/2026-05-18-11-37-27.png Graphic file (type bmp)
+<Images/2026-05-18-11-37-27.png>
+ [75]
+File: Images/2026-05-18-11-40-52.png Graphic file (type bmp)
+<Images/2026-05-18-11-40-52.png>
+File: Images/2026-05-18-11-44-27.png Graphic file (type bmp)
+<Images/2026-05-18-11-44-27.png>
+ [76]
+File: Images/2026-05-18-11-46-49.png Graphic file (type bmp)
+<Images/2026-05-18-11-46-49.png>
+ [77] [78] [79] [80] [81]
+File: Images/2026-05-18-13-33-27.png Graphic file (type bmp)
+<Images/2026-05-18-13-33-27.png>
+File: Images/2026-05-18-13-33-47.png Graphic file (type bmp)
+<Images/2026-05-18-13-33-47.png>
+ [82]
+File: Images/2026-05-18-13-35-21.png Graphic file (type bmp)
+<Images/2026-05-18-13-35-21.png>
+File: Images/2026-05-18-13-35-37.png Graphic file (type bmp)
+<Images/2026-05-18-13-35-37.png>
+File: Images/2026-05-18-13-35-52.png Graphic file (type bmp)
+<Images/2026-05-18-13-35-52.png>
+File: Images/2026-05-18-13-36-11.png Graphic file (type bmp)
+<Images/2026-05-18-13-36-11.png>
+ [83]
+File: Images/2026-05-18-13-36-32.png Graphic file (type bmp)
+<Images/2026-05-18-13-36-32.png>
+)) [84]
+\openout2 = `chapters/specific_order_matching/main.aux'.
+
+
+(chapters/specific_order_matching/main.tex
+Chương 5.
+(chapters/specific_order_matching/colussi.tex [85
+
+
+
+
+] [86]
+File: Images/2026-05-18-14-04-48.png Graphic file (type bmp)
+<Images/2026-05-18-14-04-48.png>
+ [87]
+File: Images/2026-05-18-14-07-41.png Graphic file (type bmp)
+<Images/2026-05-18-14-07-41.png>
+ [88] [89] [90]
+[91] [92]
+File: Images/2026-05-18-14-11-22.png Graphic file (type bmp)
+<Images/2026-05-18-14-11-22.png>
+ [93]
+File: Images/2026-05-18-14-12-49.png Graphic file (type bmp)
+<Images/2026-05-18-14-12-49.png>
+File: Images/2026-05-18-14-12-56.png Graphic file (type bmp)
+<Images/2026-05-18-14-12-56.png>
+File: Images/2026-05-18-14-13-05.png Graphic file (type bmp)
+<Images/2026-05-18-14-13-05.png>
+ [94]
+File: Images/2026-05-18-14-13-14.png Graphic file (type bmp)
+<Images/2026-05-18-14-13-14.png>
+File: Images/2026-05-18-14-13-22.png Graphic file (type bmp)
+<Images/2026-05-18-14-13-22.png>
+File: Images/2026-05-18-14-13-33.png Graphic file (type bmp)
+<Images/2026-05-18-14-13-33.png>
+File: Images/2026-05-18-14-13-41.png Graphic file (type bmp)
+<Images/2026-05-18-14-13-41.png>
+File: Images/2026-05-18-14-13-49.png Graphic file (type bmp)
+<Images/2026-05-18-14-13-49.png>
+) (chapters/specific_order_matching/skip_search.tex [95]
+[96] [97]
+File: Images/2026-05-18-14-30-49.png Graphic file (type bmp)
+<Images/2026-05-18-14-30-49.png>
+File: Images/2026-05-18-14-31-51.png Graphic file (type bmp)
+<Images/2026-05-18-14-31-51.png>
+ [98]
+File: Images/2026-05-18-14-32-09.png Graphic file (type bmp)
+<Images/2026-05-18-14-32-09.png>
+File: Images/2026-05-18-14-32-26.png Graphic file (type bmp)
+<Images/2026-05-18-14-32-26.png>
+)) [99] (main.aux (chapters/introduction.aux)
 (chapters/pattern_matching_classification.aux)
 (chapters/left_to_right_matching/main.aux)
-(chapters/right_to_left_matching/main.aux))
+(chapters/right_to_left_matching/main.aux)
+(chapters/specific_order_matching/main.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2DCB9F30ABFBD18C592EE4019B3109E4;16807.
+(rerunfilecheck)             Checksum: 99F49D2F831956685FCF542888223031;19409.
  ) 
 Here is how much of TeX's memory you used:
- 15808 strings out of 402807
- 313247 string characters out of 5445135
- 774430 words of memory out of 5000000
- 44367 multiletter control sequences out of 15000+600000
+ 16091 strings out of 402807
+ 323508 string characters out of 5445135
+ 777699 words of memory out of 5000000
+ 44611 multiletter control sequences out of 15000+600000
  632854 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,13n,79p,788b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,13n,79p,788b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (75 pages).
+Output written on main.pdf (100 pages).

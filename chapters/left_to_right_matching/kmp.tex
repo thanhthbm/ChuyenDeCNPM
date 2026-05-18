@@ -7,9 +7,12 @@ Khi xảy ra một vị trí không khớp, thuật toán sẽ xác định kho�
 
 Nói cách khác, nếu đang so khớp đến vị trí $j$ và xảy ra sai khác, KMP sẽ sử dụng mảng tiền xử lý (lps - longest prefix suffix) để xác định độ dài của tiền tố dài nhất cũng là hậu tố của đoạn $P[0..j]$, nhằm tránh việc so sánh lại các ký tự đã biết là trùng khớp.
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=12cm]{Images/kmp-mismatch.jpg}
-\end{center}
+    \caption{Minh họa vị trí mismatch trong thuật toán KMP}
+    \label{fig:kmp-mismatch}
+\end{figure}
 
 \subsection{Tiền xử lý (xây dựng mảng LPS)}
 
@@ -39,9 +42,12 @@ Việc xây dựng mảng LPS giúp thuật toán xác định vị trí dịch 
     \end{itemize}
 \end{itemize}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=12cm]{Images/Longest-Prefix-Suffix-lpstable.jpg}
-\end{center}
+    \caption{Bảng LPS trong thuật toán KMP}
+    \label{fig:kmp-lps-table}
+\end{figure}
 
 
 \subsection{Quá trình tìm kiếm}
@@ -65,9 +71,12 @@ Khi xảy ra sai khác tại vị trí $j$:
     \item Nếu xảy ra sai khác và $j = 0$, tăng $i$.
 \end{itemize}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=12cm]{Images/kmp-Algorithm-in-data-structures.jpg}
-\end{center}
+    \caption{Minh họa quá trình tìm kiếm của thuật toán KMP}
+    \label{fig:kmp-search}
+\end{figure}
 
 \subsection{Lặp lại và kết thúc}
 

@@ -41,9 +41,12 @@ hậu tố này không thể chồng lấp lên hai lần xuất hiện của ha
 và $b$ ở khoảng cách $p$ trong văn bản. Độ dịch chuyển nhỏ nhất có thể là
 $|u| - |v|$, và độ dịch chuyển này được gọi là turbo-shift.
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-09-24-24.png}
-\end{center}
+    \caption{Minh họa trường hợp turbo-shift trong thuật toán Turbo-BM}
+    \label{fig:turbo-bm-turbo-shift}
+\end{figure}
 
 Vẫn trong trường hợp $|v| - |u|$, nếu độ dài của phép dịch chuyển bad-character 
 lớn hơn độ dài của phép dịch chuyển good-suffix và cả độ dài của turbo-shift, thì 
@@ -51,9 +54,12 @@ lớn hơn độ dài của phép dịch chuyển good-suffix và cả độ dà
 trong trường hợp hai ký tự $c$ và $d$ là khác nhau, do ta giả sử rằng phép dịch chuyển 
 trước đó là một phép dịch chuyển good-suffix.
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-09-27-15.png}
-\end{center}
+    \caption{Minh họa trường hợp dịch chuyển lớn hơn turbo-shift}
+    \label{fig:turbo-bm-shift-bound}
+\end{figure}
 
 Khi đó, một phép dịch chuyển lớn hơn turbo-shift nhưng nhỏ hơn $|u| + 1$ sẽ 
 làm cho hai ký tự $c$ và $d$ được căn chỉnh với cùng một ký tự trong $v$. Do đó, 
@@ -208,45 +214,66 @@ int main() {
 
 \subsection{Kiểm nghiệm thuật toán}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-09-33-04.png}
-\end{center}
+    \caption{Kết quả tiền xử lý của thuật toán Turbo-BM}
+    \label{fig:turbo-bm-preprocess-1}
+\end{figure}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-09-33-21.png}
-\end{center}
+    \caption{Bảng bmBc và bmGs trong thuật toán Turbo-BM}
+    \label{fig:turbo-bm-preprocess-2}
+\end{figure}
 
 \textbf{Pha tìm kiếm:}
 
 Lần 1:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-09-38-36.png}
-\end{center}
+    \caption{Bước 1 trong quá trình thực hiện thuật toán Turbo-BM}
+    \label{fig:turbo-bm-step-1}
+\end{figure}
 
 Lần 2:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-09-38-50.png}
-\end{center}
+    \caption{Bước 2 trong quá trình thực hiện thuật toán Turbo-BM}
+    \label{fig:turbo-bm-step-2}
+\end{figure}
 
 Lần 3:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-09-39-04.png}
-\end{center}
+    \caption{Bước 3 trong quá trình thực hiện thuật toán Turbo-BM}
+    \label{fig:turbo-bm-step-3}
+\end{figure}
 
 Lần 4:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-09-39-18.png}
-\end{center}
+    \caption{Bước 4 trong quá trình thực hiện thuật toán Turbo-BM}
+    \label{fig:turbo-bm-step-4}
+\end{figure}
 
 Lần 5:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-09-39-30.png}
-\end{center}
+    \caption{Bước 5 trong quá trình thực hiện thuật toán Turbo-BM}
+    \label{fig:turbo-bm-step-5}
+\end{figure}
 
 Thuật toán Turbo-BM thực hiện 15 lần so sánh chuỗi trong ví dụ trên.
 

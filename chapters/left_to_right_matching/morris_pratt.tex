@@ -31,9 +31,12 @@ Xét một lần thử đối sánh tại vị trí bắt đầu \(j\) trên chu
 
 Khi thực hiện dịch chuyển mẫu, có thể kỳ vọng rằng một tiền tố \(v\) của mẫu sẽ khớp với một hậu tố của đoạn \(u\) trong văn bản. Tiền tố dài nhất thỏa mãn điều kiện này được gọi là biên (border) của \(u\), tức là chuỗi xuất hiện đồng thời ở cả đầu và cuối của \(u\). Từ đó, định nghĩa \(mpNext[i]\) là độ dài của biên dài nhất của \(x[0 \dots i-1]\), với \(0 < i \leq m\). Khi đó, sau mỗi lần dịch chuyển, quá trình so sánh có thể tiếp tục giữa ký tự \(c = x[mpNext[i]]\) và \(y[i+j] = b\) mà không bỏ sót bất kỳ lần xuất hiện nào của \(x\) trong \(y\), đồng thời tránh việc quay lui trên văn bản. Giá trị \(mpNext[0]\) được gán bằng \(-1\).
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/mp_1.png}
-\end{center}
+    \caption{Minh họa bảng mpNext trong thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-mpnext}
+\end{figure}
 
 Bảng \texttt{mpNext} có thể được tính trước pha tìm kiếm với độ phức tạp thời gian và không gian \(O(m)\) bằng cách áp dụng chính thuật toán tìm kiếm lên mẫu, xem như \(x = y\).
 
@@ -115,63 +118,93 @@ int main() {
 
 \subsection{Kiểm nghiệm thuật toán}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-04-29.png}
-\end{center}
+    \caption{Kết quả kiểm nghiệm thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-test-overview}
+\end{figure}
 
 \textbf{Pha tìm kiếm}
 Lần 1:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-08-22.png}
-\end{center}
+    \caption{Bước 1 trong quá trình thực hiện thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-step-1}
+\end{figure}
 
 Lần 2:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-08-56.png}
-\end{center}
+    \caption{Bước 2 trong quá trình thực hiện thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-step-2}
+\end{figure}
 
 Lần 3:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-09-18.png}
-\end{center}
+    \caption{Bước 3 trong quá trình thực hiện thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-step-3}
+\end{figure}
 
 Lần 4:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-09-35.png}
-\end{center}
+    \caption{Bước 4 trong quá trình thực hiện thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-step-4}
+\end{figure}
 
 Lần 5:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-09-52.png}
-\end{center}
+    \caption{Bước 5 trong quá trình thực hiện thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-step-5}
+\end{figure}
 
 Lần 6:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-10-15.png}
-\end{center}
+    \caption{Bước 6 trong quá trình thực hiện thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-step-6}
+\end{figure}
 
 Lần 7:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-10-33.png}
-\end{center}
+    \caption{Bước 7 trong quá trình thực hiện thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-step-7}
+\end{figure}
 
 Lần 8:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-10-49.png}
-\end{center}
+    \caption{Bước 8 trong quá trình thực hiện thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-step-8}
+\end{figure}
 
 Lần 9:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-11-20.png}
-\end{center}
+    \caption{Bước 9 trong quá trình thực hiện thuật toán Morris-Pratt}
+    \label{fig:morris-pratt-step-9}
+\end{figure}
 
 Thuật toán Morris-Pratt thực hiện 19 lần so khớp chuỗi trong ví dụ trên.

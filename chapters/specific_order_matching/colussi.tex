@@ -116,6 +116,7 @@ y[j' + h[first[h[r] - kmin[h[r]]]]].
 \begin{figure}[H]
     \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-04-48.png}
+    \caption{Minh họa phép dịch chuyển khi mismatch ở nohole trong thuật toán Colussi}
     \label{fig:colussi-nohole-shift}
 \end{figure}
 
@@ -153,9 +154,12 @@ x[h[first[m-1-rmin[h[r]]]]]
 y[j' + h[first[m-1-rmin[h[r]]]]].
 \]
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-07-41.png}
-\end{center}
+    \caption{Minh họa phép dịch chuyển khi mismatch ở hole trong thuật toán Colussi}
+    \label{fig:colussi-hole-shift}
+\end{figure}
 
 Trong tình huống này, sau khi dịch chuyển, thuật toán không cần so sánh lại phần tiền tố đã khớp của mẫu.
 
@@ -393,9 +397,12 @@ int main() {
 \subsection{Kiểm nghiệm thuật toán}
 \textbf{Pha tiền xử lý:}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-11-22.png}
-\end{center}
+    \caption{Kết quả tiền xử lý của thuật toán Colussi}
+    \label{fig:colussi-test-preprocess}
+\end{figure}
 
 Bảng được sử dụng bởi thuật toán Colussi.
 
@@ -403,43 +410,67 @@ Bảng được sử dụng bởi thuật toán Colussi.
 
 Lần 1:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-12-49.png}
-\end{center}
+    \caption{Bước 1 trong quá trình thực hiện thuật toán Colussi}
+    \label{fig:colussi-test-step-1}
+\end{figure}
 Lần 2:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-12-56.png}
-\end{center}
+    \caption{Bước 2 trong quá trình thực hiện thuật toán Colussi}
+    \label{fig:colussi-test-step-2}
+\end{figure}
 Lần 3:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-13-05.png}
-\end{center}
+    \caption{Bước 3 trong quá trình thực hiện thuật toán Colussi}
+    \label{fig:colussi-test-step-3}
+\end{figure}
 Lần 4:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-13-14.png}
-\end{center}
+    \caption{Bước 4 trong quá trình thực hiện thuật toán Colussi}
+    \label{fig:colussi-test-step-4}
+\end{figure}
 Lần 5:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-13-22.png}
-\end{center}
+    \caption{Bước 5 trong quá trình thực hiện thuật toán Colussi}
+    \label{fig:colussi-test-step-5}
+\end{figure}
 Lần 6:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-13-33.png}
-\end{center}
+    \caption{Bước 6 trong quá trình thực hiện thuật toán Colussi}
+    \label{fig:colussi-test-step-6}
+\end{figure}
 Lần 7:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-13-41.png}
-\end{center}
+    \caption{Bước 7 trong quá trình thực hiện thuật toán Colussi}
+    \label{fig:colussi-test-step-7}
+\end{figure}
 Lần 8:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-14-13-49.png}
-\end{center}
+    \caption{Bước 8 trong quá trình thực hiện thuật toán Colussi}
+    \label{fig:colussi-test-step-8}
+\end{figure}
 
 Thuật toán Colussi thực hiện 20 lần so sánh ký tự trong ví dụ trên.

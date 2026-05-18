@@ -39,9 +39,12 @@ Trong pha tìm kiếm, ta xét các bộ ba có dạng $(i, j, k)$ trong đó:
 
 Bộ ba khởi đầu là $(\ell, 0, 0)$.
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-31-03.png}
-\end{center}
+    \caption{Minh họa bộ ba (i, j, k) trong thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-triple}
+\end{figure}
 
 Bây giờ ta giải thích cách tính bộ ba tiếp theo sau khi bộ ba $(i, j, k)$ đã được tính. 
 Ba trường hợp phát sinh tùy theo giá trị của $i$:
@@ -150,61 +153,88 @@ std::vector<int> AXAMAC(const std::string& x, const std::string& y) {
 
 \subsection{Kiểm nghiệm thuật toán}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-42-19.png}
-\end{center}
+    \caption{Kết quả kiểm nghiệm thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-test-overview}
+\end{figure}
 
 \textbf{Pha tìm kiếm}
 
 Lần 1:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-43-59.png}
-\end{center}
+    \caption{Bước 1 trong quá trình thực hiện thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-step-1}
+\end{figure}
 
 
 Lần 2:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-44-13.png}
-\end{center}
+    \caption{Bước 2 trong quá trình thực hiện thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-step-2}
+\end{figure}
 
 
 Lần 3:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-44-25.png}
-\end{center}
+    \caption{Bước 3 trong quá trình thực hiện thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-step-3}
+\end{figure}
 
 
 Lần 4:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-44-36.png}
-\end{center}
+    \caption{Bước 4 trong quá trình thực hiện thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-step-4}
+\end{figure}
 
 Lần 5:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-44-49.png}
-\end{center}
+    \caption{Bước 5 trong quá trình thực hiện thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-step-5}
+\end{figure}
 
 Lần 6:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-44-59.png}
-\end{center}
+    \caption{Bước 6 trong quá trình thực hiện thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-step-6}
+\end{figure}
 
 Lần 7:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-45-08.png}
-\end{center}
+    \caption{Bước 7 trong quá trình thực hiện thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-step-7}
+\end{figure}
 
 Lần 8:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-15-10-45-53.png}
-\end{center}
+    \caption{Bước 8 trong quá trình thực hiện thuật toán Apostolico-Crochemore}
+    \label{fig:apostolico-crochemore-step-8}
+\end{figure}
 
 Trong ví dụ trên, thuật toán Apostolico-Crochemore thực hiện 20 lần so sánh chuỗi.

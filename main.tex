@@ -11,6 +11,7 @@
 
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{caption}
 
 \usepackage{array}
 \usepackage{longtable}
@@ -42,6 +43,7 @@
 \onehalfspacing
 
 \setlength{\parindent}{0pt}
+\renewcommand{\listfigurename}{Danh mục hình ảnh}
 
 \begin{document}
 
@@ -50,6 +52,8 @@
 \input{frontmatter/titlepage}
 
 \tableofcontents
+\listoffigures
+\cleardoublepage
 
 %main content
 \include{chapters/introduction}

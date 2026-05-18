@@ -1,0 +1,142 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa quá trình so khớp của thuật toán Brute Force}}{16}{figure.caption.3}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa ô-tô-mát DFA của mẫu x trong thuật toán Automaton}}{19}{figure.caption.4}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Automaton}}{19}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Automaton}}{20}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Automaton}}{20}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Automaton}}{21}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Automaton}}{21}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 6 trong quá trình thực hiện thuật toán Automaton}}{21}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa vị trí mismatch trong thuật toán KMP}}{22}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bảng LPS trong thuật toán KMP}}{24}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa quá trình tìm kiếm của thuật toán KMP}}{25}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa cập nhật vector $R_j$ trong thuật toán Shift-Or}}{33}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Các vector $S_c$ trong thuật toán Shift-Or}}{36}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Các vector $R_j$ trong thuật toán Shift-Or}}{36}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa bảng mpNext trong thuật toán Morris-Pratt}}{38}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả kiểm nghiệm thuật toán Morris-Pratt}}{40}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Morris-Pratt}}{40}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Morris-Pratt}}{40}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Morris-Pratt}}{40}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Morris-Pratt}}{41}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Morris-Pratt}}{41}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 6 trong quá trình thực hiện thuật toán Morris-Pratt}}{41}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 7 trong quá trình thực hiện thuật toán Morris-Pratt}}{41}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 8 trong quá trình thực hiện thuật toán Morris-Pratt}}{41}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 9 trong quá trình thực hiện thuật toán Morris-Pratt}}{42}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa bộ ba (i, j, k) trong thuật toán Apostolico-Crochemore}}{43}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả kiểm nghiệm thuật toán Apostolico-Crochemore}}{45}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Apostolico-Crochemore}}{45}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Apostolico-Crochemore}}{45}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.30}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Apostolico-Crochemore}}{46}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.31}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Apostolico-Crochemore}}{46}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.32}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Apostolico-Crochemore}}{46}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.33}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 6 trong quá trình thực hiện thuật toán Apostolico-Crochemore}}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.34}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 7 trong quá trình thực hiện thuật toán Apostolico-Crochemore}}{46}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.35}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 8 trong quá trình thực hiện thuật toán Apostolico-Crochemore}}{47}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.36}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Not So Naive}}{49}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.37}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Not So Naive}}{49}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.38}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Not So Naive}}{49}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.39}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Not So Naive}}{49}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.40}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Not So Naive}}{49}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.41}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 6 trong quá trình thực hiện thuật toán Not So Naive}}{50}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.42}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 7 trong quá trình thực hiện thuật toán Not So Naive}}{50}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.43}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 8 trong quá trình thực hiện thuật toán Not So Naive}}{50}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.44}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 9 trong quá trình thực hiện thuật toán Not So Naive}}{50}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.45}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 10 trong quá trình thực hiện thuật toán Not So Naive}}{50}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.46}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 11 trong quá trình thực hiện thuật toán Not So Naive}}{51}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.47}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 12 trong quá trình thực hiện thuật toán Not So Naive}}{51}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.48}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 13 trong quá trình thực hiện thuật toán Not So Naive}}{51}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.49}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 14 trong quá trình thực hiện thuật toán Not So Naive}}{51}{figure.caption.51}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bảng ký tự sai (bad-character) của thuật toán Boyer-Moore}}{53}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa quá trình so khớp của thuật toán Boyer-Moore}}{54}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa trường hợp turbo-shift trong thuật toán Turbo-BM}}{58}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa trường hợp dịch chuyển lớn hơn turbo-shift}}{58}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý của thuật toán Turbo-BM}}{62}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bảng bmBc và bmGs trong thuật toán Turbo-BM}}{62}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Turbo-BM}}{62}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Turbo-BM}}{62}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Turbo-BM}}{63}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Turbo-BM}}{63}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Turbo-BM}}{63}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý bảng qsBc của thuật toán Quick Search}}{66}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Quick Search}}{66}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Quick Search}}{66}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Quick Search}}{67}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Quick Search}}{67}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Quick Search}}{67}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý bảng bmBc của thuật toán Tuned Boyer-Moore}}{70}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Tuned Boyer-Moore}}{71}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Tuned Boyer-Moore}}{71}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Tuned Boyer-Moore}}{72}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Tuned Boyer-Moore}}{72}{figure.caption.73}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý bảng ztBc và bmGs của thuật toán Zhu-Takaoka}}{78}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Zhu-Takaoka}}{78}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Zhu-Takaoka}}{78}{figure.caption.76}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Zhu-Takaoka}}{79}{figure.caption.77}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý bảng brBc của thuật toán Berry-Ravindran}}{82}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Berry-Ravindran}}{82}{figure.caption.79}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Berry-Ravindran}}{83}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Berry-Ravindran}}{83}{figure.caption.81}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Berry-Ravindran}}{83}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Berry-Ravindran}}{83}{figure.caption.83}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 6 trong quá trình thực hiện thuật toán Berry-Ravindran}}{84}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa trường hợp 1 trong thuật toán Apostolico-Giancarlo}}{85}{figure.caption.85}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa trường hợp 2 trong thuật toán Apostolico-Giancarlo}}{85}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa trường hợp 3 trong thuật toán Apostolico-Giancarlo}}{86}{figure.caption.87}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa trường hợp 4 trong thuật toán Apostolico-Giancarlo}}{87}{figure.caption.88}%
+\contentsline {figure}{\numberline {4.38}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý bảng bmBc trong thuật toán Apostolico-Giancarlo}}{92}{figure.caption.89}%
+\contentsline {figure}{\numberline {4.39}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý bảng bmGs trong thuật toán Apostolico-Giancarlo}}{92}{figure.caption.90}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}}{93}{figure.caption.91}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}}{93}{figure.caption.92}%
+\contentsline {figure}{\numberline {4.42}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}}{93}{figure.caption.93}%
+\contentsline {figure}{\numberline {4.43}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}}{93}{figure.caption.94}%
+\contentsline {figure}{\numberline {4.44}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}}{94}{figure.caption.95}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa phép dịch chuyển khi mismatch ở nohole trong thuật toán Colussi}}{97}{figure.caption.96}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Minh họa phép dịch chuyển khi mismatch ở hole trong thuật toán Colussi}}{98}{figure.caption.97}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý của thuật toán Colussi}}{104}{figure.caption.98}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Colussi}}{104}{figure.caption.99}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Colussi}}{104}{figure.caption.100}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Colussi}}{105}{figure.caption.101}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Colussi}}{105}{figure.caption.102}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Colussi}}{105}{figure.caption.103}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 6 trong quá trình thực hiện thuật toán Colussi}}{105}{figure.caption.104}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 7 trong quá trình thực hiện thuật toán Colussi}}{106}{figure.caption.105}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 8 trong quá trình thực hiện thuật toán Colussi}}{106}{figure.caption.106}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý (bảng Z) của thuật toán Skip Search}}{109}{figure.caption.107}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Skip Search}}{109}{figure.caption.108}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Skip Search}}{110}{figure.caption.109}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Skip Search}}{110}{figure.caption.110}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý của thuật toán Alpha Skip Search}}{115}{figure.caption.111}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bảng Z sử dụng trong thuật toán Alpha Skip Search}}{115}{figure.caption.112}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Alpha Skip Search}}{115}{figure.caption.113}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Alpha Skip Search}}{116}{figure.caption.114}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Alpha Skip Search}}{116}{figure.caption.115}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý bảng bmBc của thuật toán Horspool}}{120}{figure.caption.116}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Horspool}}{120}{figure.caption.117}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Horspool}}{120}{figure.caption.118}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Horspool}}{120}{figure.caption.119}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Horspool}}{121}{figure.caption.120}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Horspool}}{121}{figure.caption.121}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 6 trong quá trình thực hiện thuật toán Horspool}}{121}{figure.caption.122}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 7 trong quá trình thực hiện thuật toán Horspool}}{121}{figure.caption.123}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý các bảng bmBc và qsBc của thuật toán Smith}}{125}{figure.caption.124}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Smith}}{125}{figure.caption.125}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Smith}}{125}{figure.caption.126}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Smith}}{125}{figure.caption.127}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Smith}}{126}{figure.caption.128}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Smith}}{126}{figure.caption.129}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Kết quả tiền xử lý bảng bmBc của thuật toán Raita}}{129}{figure.caption.130}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 1 trong quá trình thực hiện thuật toán Raita}}{129}{figure.caption.131}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 2 trong quá trình thực hiện thuật toán Raita}}{129}{figure.caption.132}%
+\contentsline {figure}{\numberline {6.18}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 3 trong quá trình thực hiện thuật toán Raita}}{130}{figure.caption.133}%
+\contentsline {figure}{\numberline {6.19}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 4 trong quá trình thực hiện thuật toán Raita}}{130}{figure.caption.134}%
+\contentsline {figure}{\numberline {6.20}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 5 trong quá trình thực hiện thuật toán Raita}}{130}{figure.caption.135}%
+\contentsline {figure}{\numberline {6.21}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 6 trong quá trình thực hiện thuật toán Raita}}{130}{figure.caption.136}%
+\contentsline {figure}{\numberline {6.22}{\ignorespaces \xpg@aux {}{vietnamese}\ignorespaces Bước 7 trong quá trình thực hiện thuật toán Raita}}{131}{figure.caption.137}%
+\addvspace {10\p@ }

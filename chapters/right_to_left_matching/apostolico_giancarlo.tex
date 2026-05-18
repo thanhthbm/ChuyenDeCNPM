@@ -40,9 +40,12 @@ Khi đó sẽ xuất hiện 4 trường hợp sau:
     
         Điều này có nghĩa là đã tìm thấy một lần xuất hiện của mẫu $x$ tại vị trí $j$, và $skip[j + m - 1]$ được gán bằng $m$. Sau đó, thuật toán thực hiện phép dịch chuyển có độ dài bằng $per(x)$.
 
-        \begin{center}
+        \begin{figure}[H]
+            \centering
             \includegraphics[width=10cm]{Images/2026-05-18-11-37-27.png}
-        \end{center}
+            \caption{Minh họa trường hợp 1 trong thuật toán Apostolico-Giancarlo}
+            \label{fig:apostolico-giancarlo-case-1}
+        \end{figure}
 
     \item \textbf{Trường hợp 2:} $k > suff[i]$ và $suff[i] \leq i$.
 
@@ -52,9 +55,12 @@ Khi đó sẽ xuất hiện 4 trường hợp sau:
         skip[j+m - 1] = m - 1 - i + suff[i]
         \]
 
-        \begin{center}
+        \begin{figure}[H]
+            \centering
             \includegraphics[width=10cm]{Images/2026-05-18-11-40-52.png}
-        \end{center}
+            \caption{Minh họa trường hợp 2 trong thuật toán Apostolico-Giancarlo}
+            \label{fig:apostolico-giancarlo-case-2}
+        \end{figure}
 
         Một phép dịch chuyển được thực hiện bằng cách sử dụng:
 
@@ -76,9 +82,12 @@ Khi đó sẽ xuất hiện 4 trường hợp sau:
         skip[j+m-1] = m - 1 - i + k
         \]
 
-        \begin{center}
+        \begin{figure}[H]
+            \centering
             \includegraphics[width=10cm]{Images/2026-05-18-11-44-27.png}
-        \end{center}
+            \caption{Minh họa trường hợp 3 trong thuật toán Apostolico-Giancarlo}
+            \label{fig:apostolico-giancarlo-case-3}
+        \end{figure}
 
         Phép dịch chuyển được tính bằng:
 
@@ -102,9 +111,12 @@ Khi đó sẽ xuất hiện 4 trường hợp sau:
 
         để tiếp tục quá trình so sánh giữa các ký tự $y[i + j - k]$ và $x[i - k]$.
 
-        \begin{center}
+        \begin{figure}[H]
+            \centering
             \includegraphics[width=10cm]{Images/2026-05-18-11-46-49.png}
-        \end{center}    
+            \caption{Minh họa trường hợp 4 trong thuật toán Apostolico-Giancarlo}
+            \label{fig:apostolico-giancarlo-case-4}
+        \end{figure}
 \end{itemize}
 
 Trong mọi trường hợp, thông tin duy nhất cần thiết là độ dài của hậu tố dài nhất của $x$ kết thúc tại vị trí $i$ trong $x$.
@@ -338,13 +350,19 @@ int main() {
 
 \textbf{Pha tiền xử lý:}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-13-33-27.png}
-\end{center}
+    \caption{Kết quả tiền xử lý bảng bmBc trong thuật toán Apostolico-Giancarlo}
+    \label{fig:apostolico-giancarlo-preprocess-bmbc}
+\end{figure}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/2026-05-18-13-33-47.png}
-\end{center}
+    \caption{Kết quả tiền xử lý bảng bmGs trong thuật toán Apostolico-Giancarlo}
+    \label{fig:apostolico-giancarlo-preprocess-bmgs}
+\end{figure}
 
 Bảng $\texttt{bmBc}$ và $\texttt{bmGs}$ được sử dụng trong thuật toán Apostolico-Giancarlo.
 
@@ -352,32 +370,47 @@ Bảng $\texttt{bmBc}$ và $\texttt{bmGs}$ được sử dụng trong thuật to
 
 Lần 1:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-13-35-21.png}
-\end{center}
+    \caption{Bước 1 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}
+    \label{fig:apostolico-giancarlo-step-1}
+\end{figure}
 
 Lần 2:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-13-35-37.png}
-\end{center}
+    \caption{Bước 2 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}
+    \label{fig:apostolico-giancarlo-step-2}
+\end{figure}
 
 Lần 3:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-13-35-52.png}
-\end{center}
+    \caption{Bước 3 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}
+    \label{fig:apostolico-giancarlo-step-3}
+\end{figure}
 
 Lần 4:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-13-36-11.png}
-\end{center}
+    \caption{Bước 4 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}
+    \label{fig:apostolico-giancarlo-step-4}
+\end{figure}
 
 Lần 5:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=15cm]{Images/2026-05-18-13-36-32.png}
-\end{center}
+    \caption{Bước 5 trong quá trình thực hiện thuật toán Apostolico-Giancarlo}
+    \label{fig:apostolico-giancarlo-step-5}
+\end{figure}
 
 Thuật toán Apostolico-Giancarlo thực hiện 15 lần so khớp ký tự trong ví dụ trên.

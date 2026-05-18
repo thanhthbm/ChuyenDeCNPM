@@ -53,9 +53,12 @@ R_{j+1}[0] =
 
 Nếu $R_{j+1}[m-1]=0$ thì một chuỗi so khớp sẽ được ghi nhận.
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=12cm]{Images/shift_or_1.png}
-\end{center}
+    \caption{Minh họa cập nhật vector $R_j$ trong thuật toán Shift-Or}
+    \label{fig:shift-or-update}
+\end{figure}
 
 Chuyển từ $R_j$ sang $R_{j+1}$ có thể tính toán rất nhanh dựa theo: Với mỗi $c \in \Sigma$, gọi $S_c$ là một vector bit có kích thước $m$ thỏa mãn:
 
@@ -147,14 +150,20 @@ Giả sử độ dài mẫu không lớn hơn kích thước của từ nhớ m�
 \subsection{Kiểm nghiệm thuật toán}
 Tính các vector $S_c$:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/shift_or_2.png}
-\end{center}
+    \caption{Các vector $S_c$ trong thuật toán Shift-Or}
+    \label{fig:shift-or-sc-vectors}
+\end{figure}
 
 Tính các vector $R_j$:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=10cm]{Images/shift_or_3.png}
-\end{center}
+    \caption{Các vector $R_j$ trong thuật toán Shift-Or}
+    \label{fig:shift-or-rj-vectors}
+\end{figure}
 
 Với $R_12[7] = 0$ tức là $x$ được tìm thấy tại vị trí $12 - 8 + 1 = 5$.

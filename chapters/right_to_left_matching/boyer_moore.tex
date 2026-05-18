@@ -40,9 +40,12 @@ Trong đó:
 
 Ví dụ:
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=12cm]{Images/Bad-Character-Table.jpg}
-\end{center}
+    \caption{Bảng ký tự sai (bad-character) của thuật toán Boyer-Moore}
+    \label{fig:boyer-moore-bad-character-table}
+\end{figure}
 
 \subsection{Tìm kiếm}
 
@@ -62,9 +65,12 @@ Khi xảy ra sự không khớp:
     \item Nếu ký tự gây ra không khớp không xuất hiện trong mẫu, dịch chuyển toàn bộ mẫu vượt qua ký tự đó trong văn bản.
 \end{itemize}
 
-\begin{center}
+\begin{figure}[H]
+    \centering
     \includegraphics[width=12cm]{Images/Boyer-Moore-Algorithm-in-data-structures.jpg}
-\end{center}
+    \caption{Minh họa quá trình so khớp của thuật toán Boyer-Moore}
+    \label{fig:boyer-moore-search}
+\end{figure}
 
 \subsection{Lặp lại quá trình so khớp}
 Sau khi dịch chuyển mẫu theo các quy tắc đã nêu, thuật toán tiếp tục quá trình so sánh:

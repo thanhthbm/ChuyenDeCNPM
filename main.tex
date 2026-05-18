@@ -1,0 +1,60 @@
+\documentclass[12pt, a4paper]{report}
+
+\usepackage{fontspec}
+
+
+\usepackage{polyglossia}
+\setdefaultlanguage{vietnamese}
+
+
+\usepackage{amsmath, amssymb, amsthm}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{array}
+\usepackage{longtable}
+
+\usepackage{booktabs}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    columns=fullflexible,
+    breakatwhitespace=true,
+    breaklines=true,
+}
+
+\usepackage{hyperref}
+
+\usepackage[
+    top=2cm,
+    bottom=2cm,
+    left=3.5cm,
+    right=2.5cm
+]{geometry}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\pagestyle{plain}
+
+\input{frontmatter/titlepage}
+
+\tableofcontents
+
+%main content
+\include{chapters/introduction}
+\include{chapters/pattern_matching_classification}
+\include{chapters/left_to_right_matching/main}
+\include{chapters/right_to_left_matching/main}
+
+\end{document}

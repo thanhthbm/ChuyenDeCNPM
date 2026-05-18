@@ -1,0 +1,66 @@
+\chapter{PHÂN LOẠI CÁC THUẬT TOÁN ĐỐI SÁNH MẪU}
+
+Các thuật toán đối sánh mẫu có thể được phân loại thành nhiều nhóm khác nhau dựa trên chiến lược tìm kiếm. Trong phạm vi tài liệu này, các thuật toán được chia thành 4 nhóm chính.
+
+\section{Nhóm thuật toán tìm kiếm mẫu từ trái sang phải}
+
+Các thuật toán trong nhóm này thực hiện so khớp ký tự theo hướng từ trái sang phải của văn bản.
+
+\begin{itemize}
+    \item Thuật toán Brute Force
+    \item Search with an automaton
+    \item Thuật toán Karp-Rabin
+    \item Thuật toán Shift Or
+    \item Thuật toán Morris-Pratt
+    \item Thuật toán Knuth-Morris-Pratt
+    \item Thuật toán Apostolico-Crochemore
+    \item Thuật toán Not So Naïve
+\end{itemize}
+
+
+\section{Nhóm thuật toán tìm kiếm mẫu từ phải sang trái}
+
+Khác với nhóm thuật toán duyệt từ trái sang phải, các thuật toán trong nhóm này thực hiện quá trình so khớp bắt đầu từ ký tự ngoài cùng bên phải của xâu mẫu. Cách tiếp cận này giúp phát hiện sự không khớp sớm ở phần cuối của mẫu, từ đó cho phép dịch chuyển cửa sổ tìm kiếm một cách hiệu quả hơn.
+
+Nhờ đặc điểm này, nhóm thuật toán duyệt từ phải sang trái thường đạt hiệu năng cao trong thực tế, đặc biệt đối với các văn bản có độ dài lớn và bảng chữ cái có kích thước rộng.
+
+Các thuật toán tiêu biểu trong nhóm này bao gồm:
+
+\begin{itemize}
+    \item Thuật toán Boyer-Moore
+    \item Thuật toán Turbo-BM
+    \item Thuật toán Quick Search
+    \item Thuật toán Tuned-Boyer-Moore
+    \item Thuật toán Zhu-Takaoka
+    \item Thuật toán Berry-Ravindran
+    \item Thuật toán Apostolico-Giancarlo
+\end{itemize}
+
+\section{Các thuật toán tìm kiếm mẫu từ vị trí xác định}
+
+Khác với các nhóm thuật toán trước, nhóm thuật toán tìm kiếm mẫu từ vị trí xác định không thực hiện so khớp trên toàn bộ văn bản một cách tuần tự, mà thay vào đó bắt đầu quá trình tìm kiếm từ các vị trí đã được xác định trước hoặc được tính toán dựa trên các đặc trưng của mẫu và văn bản.
+
+Cách tiếp cận này giúp giảm không gian tìm kiếm, đặc biệt trong các bài toán có điều kiện ràng buộc về vị trí xuất hiện của mẫu hoặc khi văn bản có cấu trúc đặc biệt.
+
+Các thuật toán trong nhóm này thường kết hợp với các kỹ thuật tiền xử lý để xác định các vị trí tiềm năng, từ đó thực hiện so khớp chi tiết tại các vị trí đó thay vì duyệt toàn bộ văn bản.
+
+Một số thuật toán tiêu biểu trong nhóm này bao gồm:
+\begin{itemize}
+    \item Thuật toán Colussi
+    \item Thuật toán Skip Search
+    \item Thuật toán Alpha Skip Search
+\end{itemize}
+
+\section{Nhóm thuật toán tìm kiếm mẫu từ vị trí bất kỳ}
+
+Nhóm thuật toán tìm kiếm mẫu từ vị trí bất kỳ là nhóm cơ bản nhất trong bài toán đối sánh xâu, trong đó không có ràng buộc về vị trí xuất hiện của mẫu trong văn bản. Thuật toán sẽ thực hiện việc tìm kiếm toàn bộ các vị trí có thể trong văn bản để xác định sự xuất hiện của xâu mẫu.
+
+Cách tiếp cận này thường được sử dụng trong các bài toán tổng quát, khi không có thông tin trước về vị trí của mẫu. Do đó, các thuật toán trong nhóm này thường có chiến lược duyệt tuần tự trên toàn bộ văn bản, kết hợp với các kỹ thuật tối ưu hóa để giảm số lần so khớp không cần thiết.
+
+Đây là nhóm thuật toán nền tảng, từ đó phát triển nhiều kỹ thuật tối ưu hóa khác nhau trong các nhóm thuật toán nâng cao.
+
+\begin{itemize}
+    \item Thuật toán Hospool
+    \item Thuật toán Smith
+    \item Thuật toán Raita
+\end{itemize}

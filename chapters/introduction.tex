@@ -1,0 +1,46 @@
+\chapter{TỔNG QUAN BÀI TOÁN ĐỐI SÁNH XÂU}
+
+\section{Giới thiệu}
+Đối sánh xâu (String Matching) là một trong những chủ đề nền tảng và quan trọng trong lĩnh vực xử lý văn bản và khoa học máy tính. Các thuật toán đối sánh xâu được xem như các thành phần cơ sở, được triển khai trong nhiều hệ thống thực tế, bao gồm cả các hệ điều hành và công cụ xử lý dữ liệu.
+
+Không chỉ dừng lại ở xử lý văn bản, các thuật toán này còn đóng vai trò quan trọng trong nhiều lĩnh vực khác nhau như xử lý ảnh, xử lý ngôn ngữ tự nhiên (NLP), tin sinh học (Bioinformatics), cũng như thiết kế và tối ưu hóa phần mềm.
+\section{Bài toán đối sánh xâu}
+
+Bài toán đối sánh xâu (String Matching Problem) được hiểu là quá trình tìm kiếm một hoặc nhiều chuỗi con (pattern) xuất hiện trong một chuỗi văn bản (text), có thể có độ dài rất lớn.
+
+Ký hiệu:
+\begin{itemize}
+    \item Xâu mẫu (pattern) ký hiệu là:
+    \[
+    X = (x_0, x_1, \dots, x_{m-1})
+    \]
+    với độ dài $m$
+
+    \item Văn bản (text) ký hiệu là:
+    \[
+    Y = (y_0, y_1, \dots, y_{n-1})
+    \]
+    với độ dài $n$
+
+    \item Cả hai xâu được xây dựng trên một bảng chữ cái hữu hạn (alphabet) ký hiệu:
+    \[
+    \Sigma
+    \]
+    với kích thước $|\Sigma| = \sigma$.
+\end{itemize}
+
+Ví dụ, một xâu nhị phân trong mật mã học cũng có thể được xem là một pattern. Tương tự, một chuỗi ký tự như “ABD” có thể biểu diễn các chuỗi khác nhau trong ứng dụng thực tế như phân tích dữ liệu hoặc xử lý ngôn ngữ.
+
+
+\section{Đầu vào và đầu ra của bài toán}
+
+\textbf{Input:}
+\begin{itemize}
+    \item Xâu mẫu $X = (x_0, x_1, \dots, x_{m-1})$, độ dài $m$.
+    \item Văn bản $Y = (y_0, y_1, \dots, y_{n-1})$, độ dài $n$.
+\end{itemize}
+
+\textbf{Output:}
+\begin{itemize}
+    \item Tất cả các vị trí xuất hiện của $X$ trong $Y$.
+\end{itemize}

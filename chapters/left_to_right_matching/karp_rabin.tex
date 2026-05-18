@@ -1,0 +1,159 @@
+\section{Thuật toán Karp-Rabin}
+
+Thuật toán Rabin-Karp là một thuật toán tìm kiếm chuỗi sử dụng kỹ thuật băm (hashing) để so khớp xâu mẫu trong văn bản. Thuật toán này được phát triển bởi Richard M. Karp và Michael O. Rabin vào năm 1987.
+
+Đối với một văn bản $T$ có độ dài $n$ và một xâu mẫu $P$ có độ dài $m$, độ phức tạp trung bình của thuật toán là $O(n + m)$. Tuy nhiên, trong trường hợp xấu nhất, độ phức tạp của thuật toán có thể trở thành $O(n \cdot m)$, tương đương với thuật toán Brute Force do xảy ra nhiều va chạm (collision) trong quá trình băm.
+
+Mặc dù thuật toán Knuth-Morris-Pratt (KMP) thường hiệu quả hơn trong bài toán tìm kiếm chuỗi đơn lẻ, Rabin-Karp lại được sử dụng rộng rãi trong các hệ thống phát hiện đạo văn (plagiarism detection), nơi cần so khớp nhiều đoạn văn bản với nhau trong thời gian ngắn bằng cách sử dụng giá trị băm để tăng tốc quá trình so sánh.
+
+\subsection{Thuật toán}
+
+Nếu xét phương pháp tiếp cận Brute Force, việc tìm kiếm một mẫu trong chuỗi mất thời gian $O(mn)$. Đặt câu hỏi: nếu có thể so sánh hai ký tự trong thời gian $O(1)$ như so sánh số nguyên thì sao?
+
+Thuật toán Rabin-Karp giải quyết vấn đề này bằng cách sử dụng kỹ thuật băm (hashing), cho phép chuyển một xâu ký tự thành một giá trị số nguyên. Ý tưởng là biểu diễn xâu ký tự dưới dạng một số theo hệ cơ số $B$, trong đó $B$ lớn hơn giá trị ASCII lớn nhất của các ký tự trong bảng chữ cái.
+
+Sau đó, giá trị theo hệ cơ số $B$ này được chuyển sang hệ cơ số 10 để thu được giá trị băm (hash value) của xâu. Việc này được thực hiện theo công thức:
+
+\[
+hash(S) = s_0 \cdot B^{m - 1} + s_1 \cdot B^{m-2} + \dots + s_{m - 1} \cdot B^{1} + s_m \cdot B^{0}
+\]
+
+Trong công thức trên, $s(i)$ là giá trị ASCII của ký tự thứ $i$ trong xâu $s$.
+
+Nhờ cách biểu diễn này, mỗi xâu ký tự (trong điều kiện lý tưởng và không xảy ra va chạm hash) sẽ tương ứng với một giá trị băm duy nhất. Điều này giúp việc so sánh hai xâu có thể được thực hiện nhanh chóng thông qua việc so sánh giá trị hash thay vì so sánh từng ký tự.
+
+\subsection{Xác định giá trị băm}
+
+Mục tiêu chính khi cài đặt thuật toán là tính toán giá trị băm một cách hiệu quả. Đầu tiên, ta cần tính giá trị băm của xâu mẫu $P$. Sau đó, ta so sánh với giá trị băm của từng đoạn con có độ dài $m$ trong xâu $S$.
+
+Nếu ta tính trực tiếp giá trị băm cho mỗi đoạn con có độ dài $m$, độ phức tạp sẽ là $O(mn)$. Khi đó, cách tiếp cận này không còn ưu việt hơn so với thuật toán Brute Force.
+
+Vì vậy, ta cần một phương pháp tối ưu hơn để giảm độ phức tạp xuống $O(n)$.
+
+Giả sử $H(i)$ là giá trị băm của đoạn con có độ dài $m$ trong chuỗi $S$, bắt đầu từ vị trí $i$. Khi đó ta có thể biểu diễn như sau:
+
+\[
+hash(S) = s_0 \cdot B^{m - 1} + s_1 \cdot B^{m-2} + \dots + s_{m - 1} \cdot B^{1} + s_m \cdot B^{0}
+\]
+
+Với $m = 3$, ta có thể viết $H(0)$ và $H(1)$ thế này
+
+\[
+H_0 = s_0 \cdot B^2 + s_1 \cdot B^1 + s_2 
+\]
+
+\[
+H_1 = s_1 \cdot B^2 + s_2 \cdot B^1 + s_3
+\]
+
+Giờ ta có thể viết $H(1)$ biểu diễn bằng $H(0)$ như sau:
+
+\[
+H_1 = ((s_0 \cdot B^2 + s_1 \cdot B^1 + s_2) - (s_0 \cdot B^2)) \cdot B + s_3
+\]
+
+\[
+H_1 = (H_0 - S_0 \cdot B^2) \cdot B + s_3
+\]
+
+Vậy nên, ta có công thức tổng quát:
+
+\[
+H_i = (H_(i - 1) - S_(i - 1) \cdot B^{m - 1}) \cdot B + s_{i + m - 1}
+\]
+
+Giờ đây ta có thể lấy giá trị băm của mỗi xâu con size $m$ trong xâu $S$ với độ phức tạp $O(n)$. Ta chỉ cần tìm giá trị băm của $m$ ký tự đầu tiên. Các ký tự còn lại ta có thể xác định đựa trên thuật toán băm.
+
+\subsection{Cài đặt thuật toán bằng C++}
+
+\begin{verbatim}
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+typedef long long ll;
+
+const ll B = 256;        // base (hệ cơ số)
+const ll MOD = 1e9 + 7;  // modulo để tránh tràn số
+
+// Hàm tính lũy thừa (B^(m-1))
+ll power(ll base, ll exp) {
+    ll result = 1;
+    for (ll i = 0; i < exp; i++)
+        result = (result * base) % MOD;
+    return result;
+}
+
+// Hàm Rabin-Karp
+vector<int> rabinKarp(string text, string pattern) {
+    vector<int> result;
+
+    int n = text.size();
+    int m = pattern.size();
+
+    if (m > n) return result;
+
+    ll hashP = 0; // hash của pattern
+    ll hashT = 0; // hash của window text
+    ll h = power(B, m - 1);
+
+    // Tính hash ban đầu
+    for (int i = 0; i < m; i++) {
+        hashP = (B * hashP + pattern[i]) % MOD;
+        hashT = (B * hashT + text[i]) % MOD;
+    }
+
+    // Duyệt từng cửa sổ
+    for (int i = 0; i <= n - m; i++) {
+
+        // Nếu hash khớp thì kiểm tra từng ký tự
+        if (hashP == hashT) {
+            bool match = true;
+            for (int j = 0; j < m; j++) {
+                if (text[i + j] != pattern[j]) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match) result.push_back(i);
+        }
+
+        // Cập nhật rolling hash
+        if (i < n - m) {
+            hashT = (B * (hashT - text[i] * h) + text[i + m]) % MOD;
+
+            if (hashT < 0)
+                hashT += MOD;
+        }
+    }
+
+    return result;
+}
+
+int main() {
+    string text = "ababcabcabababd";
+    string pattern = "ababd";
+
+    vector<int> pos = rabinKarp(text, pattern);
+
+    cout << "Vi tri xuat hien: ";
+    for (int i : pos) {
+        cout << i << " ";
+    }
+
+    return 0;
+}
+\end{verbatim}
+
+\subsection{Độ phức tạp của thuật toán}
+
+Trong cài đặt này, giá trị băm của xâu mẫu được tính trong thời gian $O(m)$, trong khi giá trị băm của văn bản được tính trong thời gian $O(n)$. Do đó, tổng độ phức tạp của bước khởi tạo là $O(m + n)$.
+
+Tuy nhiên, trong quá trình tính toán, giá trị băm có thể bị tràn số (overflow). Để khắc phục vấn đề này, ta sử dụng phép toán modulo với một số lớn $M$, nhằm giới hạn phạm vi giá trị của hash.
+
+Mặc dù vậy, việc sử dụng modulo có thể dẫn đến hiện tượng va chạm (collision), khi hai xâu khác nhau nhưng lại có cùng giá trị băm. Trong trường hợp này, ta cần kiểm tra lại từng ký tự của xâu để xác nhận kết quả, điều này có thể làm tăng độ phức tạp lên $O(mn)$ trong trường hợp xấu nhất.
+
+Để giảm thiểu va chạm, có thể sử dụng kỹ thuật rehashing với các giá trị cơ số $B$ và modulo $M$ khác nhau. Tuy nhiên, trong một số trường hợp, việc kiểm tra lại từng ký tự vẫn có thể xảy ra, làm giảm hiệu quả của thuật toán.
+
+Do đó, trong nhiều tình huống thực tế, thuật toán KMP vẫn được ưu tiên hơn do đảm bảo độ phức tạp ổn định và không phụ thuộc vào xác suất va chạm như Rabin-Karp.

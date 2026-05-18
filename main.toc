@@ -1,0 +1,69 @@
+\xpg@aux {}{vietnamese}
+\contentsline {chapter}{\numberline {1}TỔNG QUAN BÀI TOÁN ĐỐI SÁNH XÂU}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Giới thiệu}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Bài toán đối sánh xâu}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Đầu vào và đầu ra của bài toán}{4}{section.1.3}%
+\contentsline {chapter}{\numberline {2}PHÂN LOẠI CÁC THUẬT TOÁN ĐỐI SÁNH MẪU}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Nhóm thuật toán tìm kiếm mẫu từ trái sang phải}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Nhóm thuật toán tìm kiếm mẫu từ phải sang trái}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Các thuật toán tìm kiếm mẫu từ vị trí xác định}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Nhóm thuật toán tìm kiếm mẫu từ vị trí bất kỳ}{7}{section.2.4}%
+\contentsline {chapter}{\numberline {3}TÌM KIẾM MẪU TỪ TRÁI SANG PHẢI}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Thuật toán Brute Force}{8}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Đặc điểm chính}{8}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Mô tả thuật toán}{8}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Cài đặt bằng C++}{9}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Kiểm nghiệm thuật toán}{10}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Thuật toán Tìm kiếm bằng Ô-tô-mát (Automaton)}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Đặc điểm chính}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Mô tả thuật toán}{11}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Cài đặt bằng C++}{11}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Kiểm nghiệm thuật toán}{13}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Thuật toán Knuth-Morris-Pratt (KMP)}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Tiền xử lý (xây dựng mảng LPS)}{16}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Quá trình tìm kiếm}{18}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Quá trình dịch chuyển}{18}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Lặp lại và kết thúc}{19}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Cài đặt thuật toán bằng C++}{19}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Thuật toán Karp-Rabin}{21}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Thuật toán}{21}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Xác định giá trị băm}{22}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Cài đặt thuật toán bằng C++}{22}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Độ phức tạp của thuật toán}{24}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Thuật toán Shift Or}{25}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Đặc điểm chính}{25}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Mô tả thuật toán}{25}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Cài đặt thuật toán bằng C++}{26}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Đánh giá độ phức tạp của thuật toán}{28}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Kiểm nghiệm thuật toán}{28}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}Thuật toán Morriss-Pratt}{29}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Đặc điểm chính}{29}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Mô tả thuật toán}{30}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Cài đặt bằng C++}{31}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Kiểm nghiệm thuật toán}{33}{subsection.3.6.4}%
+\contentsline {section}{\numberline {3.7}Thuật toán Apostolico-Crochemore}{34}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Đặc điểm chính}{34}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Mô tả thuật toán}{35}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Cài đặt bằng C++}{36}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Kiểm nghiệm thuật toán}{37}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Thuật toán Not So Naïve}{39}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Đặc điểm chính}{39}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Mô tả thuật toán}{39}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Cài đặt bằng C++}{39}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Kiểm nghiệm thuật toán}{40}{subsection.3.8.4}%
+\contentsline {chapter}{\numberline {4}TÌM KIẾM MẪU TỪ PHẢI SANG TRÁI}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Thuật toán Boyer-Moore}{43}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Tiền xử lý}{43}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Tìm kiếm}{44}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Dịch chuyển mẫu (Shifting the Pattern)}{45}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Lặp lại quá trình so khớp}{45}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Điều kiện kết thúc (Termination)}{45}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Cài đặt thuật toán bằng C++}{45}{subsection.4.1.6}%
+\contentsline {section}{\numberline {4.2}Thuật toán Turbo Boyer-Moore (Turbo-BM)}{47}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Đặc điểm chính}{47}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Mô tả thuật toán}{48}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Cài đặt bằng C++}{49}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Kiểm nghiệm thuật toán}{53}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Thuật toán Quick Search}{54}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Đặc điểm chính}{54}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Mô tả thuật toán}{54}{subsection.4.3.2}%

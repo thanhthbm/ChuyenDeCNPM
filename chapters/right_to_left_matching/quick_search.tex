@@ -40,3 +40,122 @@ m + 1,
 \end{cases}
 \]
 
+(Cải tiến này được đề xuất bởi Darko Brljak.)
+
+Giai đoạn tiền xử lý của thuật toán có độ phức tạp thời gian $O(m + \sigma)$ và 
+độ phức tạp không gian $O(\sigma)$.
+
+Trong giai đoạn tìm kiếm, các phép so sánh giữa ký tự của mẫu và văn bản 
+trong mỗi lần thử có thể được thực hiện theo bất kỳ thứ tự nào. Mặc dù giai 
+đoạn tìm kiếm có độ phức tạp thời gian bậc hai trong trường hợp xấu nhất, thuật 
+toán vẫn cho hiệu năng rất tốt trong thực tế.
+
+
+\subsection{Cài đặt bằng C++}
+
+\begin{verbatim}
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+const int ASIZE = 256;
+
+/* Preprocessing: Quick Search Bad Character Table */
+void preQsBc(const string &pat, vector<int> &qsBc) {
+    int m = pat.length();
+
+    qsBc.assign(ASIZE, m + 1);
+
+    for (int i = 0; i < m; ++i) {
+        qsBc[(unsigned char)pat[i]] = m - i;
+    }
+}
+
+/* Quick Search Algorithm */
+void QuickSearch(const string &pat, const string &txt) {
+    int m = pat.length();
+    int n = txt.length();
+
+    vector<int> qsBc;
+
+    /* Preprocessing */
+    preQsBc(pat, qsBc);
+
+    /* Searching */
+    int j = 0;
+
+    while (j <= n - m) {
+        int i = 0;
+
+        while (i < m && pat[i] == txt[j + i]) {
+            ++i;
+        }
+
+        if (i == m) {
+            cout << "Pattern found at index: " << j << endl;
+        }
+
+        if (j + m < n) {
+            j += qsBc[(unsigned char)txt[j + m]];
+        } else {
+            break;
+        }
+    }
+}
+
+int main() {
+    string text = "ABAAABCDABCABC";
+    string pattern = "ABC";
+
+    QuickSearch(pattern, text);
+
+    return 0;
+}
+\end{verbatim}
+
+\subsection{Kiểm nghiệm thuật toán}
+\textbf{Pha tiền xử lý:}
+
+\begin{center}
+    \includegraphics[width=10cm]{Images/2026-05-18-10-01-24.png}
+\end{center}
+
+Bảng $qsBc$ được sử dụng bởi thuật toán Quick Search.
+
+\textbf{Pha tìm kiếm:}
+
+Lần 1:
+
+\begin{center}
+    \includegraphics[width=10cm]{Images/2026-05-18-10-02-42.png}
+\end{center}
+
+Lần 2:
+
+\begin{center}
+    \includegraphics[width=10cm]{Images/2026-05-18-10-03-03.png}
+\end{center}
+
+Lần 3:
+
+\begin{center}
+    \includegraphics[width=10cm]{Images/2026-05-18-10-03-22.png}
+\end{center}
+
+Lần 4:
+
+\begin{center}
+    \includegraphics[width=10cm]{Images/2026-05-18-10-03-39.png}
+\end{center}
+
+Lần 5:
+
+\begin{center}
+    \includegraphics[width=10cm]{Images/2026-05-18-10-03-53.png}
+\end{center}
+
+Thuật toán Quick Search thực hiện 15 lần so sánh chuỗi trong ví dụ trên.
+
+
